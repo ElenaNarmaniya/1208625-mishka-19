@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- Разметка для БЛОКА логотипа -->
+      <!-- header__logo задаст внешние отступы логотипу в мобил. и десктоп. версиях, header__logo_table задаст их в планшетной-->
+      <div class="logo header__logo header__logo-table">
+        <img src="img/mishka-logo-mobile-svg.svg" alt="Логотип mishka" width="86" height="35">
+      </div>
+      <!-- Разметка для БЛОКА навигации -->
+      <nav class="main-nav">
+        <!-- кнопка для иконки бургера в мобил. версии, hidden - для скрытия в других версиях -->
+        <button class="button header__button-menu hidden">
+          <img src="img/menu-svg.svg" alt="Бургер" width="20" height="14">
+        </button>
+        <!-- Разметка для БЛОКА разделов сайта
+        main-nav__mobile - расположение блоков в мобил. версии, main-nav__table - в планшетной, main-nav__desktop - в десктопной, site-list - общие стили разделов для всех версий -->
+        <ul class="main-nav__mobile  main-nav__table main-nav__desktop site-list">
+          <li class="site-list__item">
+            <a href="catalog.html">Каталог товаров</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Вязание на заказ</a>
+          </li>
+        </ul>
+        <!-- Разметка для БЛОКА поиска -->
+        <div class="search-block main-nav__search-block">
+          <button type="button" class="button main-nav__search-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-0.8 -0.8 17.6 17.6">
+              <path fill="#231F20" d="M16.47 14.93l-3.415-3.415c.965-1.289 1.545-2.881 1.545-4.616C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33.607 0 1.1-.492 1.1-1.1 0-.24-.061-.499-.33-.769zM1.399 6.899c0-3.038 2.462-5.5 5.5-5.5s5.5 2.462 5.5 5.5-2.462 5.5-5.5 5.5-5.5-2.461-5.5-5.5z"/>
+            </svg>Поиск по сайту
+          </button>
+          <form action="#" method="post" class="main-nav__search-form">
+            <input type="search" placeholder="Поле поиска" name="search" autocomplete="on">
+          </form>
+        </div>
+        <!-- Разметка для БЛОКА корзины -->
+        <div class="main-nav__basket main-nav__basket_mobile">
+          <a class="basket" href="javascript: void(0)" title="Переход в корзину">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849">
+              <path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/>
+            </svg>Корзина: пока пуста
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- Разметка для БЛОКА "Каталог товаров" -->
+    <div class="catalog-brand">
+    <!-- Разметка для БЛОКА оглавления "Каталог товаров" -->
+      <div class="catalog-name catalog-brand__catalog-name">
+        <!-- text - одинаковый здесь и на странице главной в названии "Милые штуки ручной работы для дома" -->
+        <p class="text catalog-brand__text">
+          Каталог товаров
+        </p>
+      </div>
+      <!-- Разметка для БЛОКА каждого товара -->
+      <ul class="catalog-list catalog-brand__catalog-list">
+        <li class="catalog-list__item">
+          <img src="img/photo-1-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+          <!-- text2 - одинаковые стили текста здесь и на главной, в цене товара недели, в кнопке заказать, в преимуществах -->
+          <p class="text2 catalog-list__text2">Зайчик-попрыгайчик</p>
+          <p class="feature catalog-list__feature">Рост 30 см, вес 200 г</p>
+          <!-- brandtext - одинаковые стили в описании и хар-ках здесь и в ценена странице каталога -->
+          <p class="brandtext catalog-list__brandtext">1 200 руб.</p>
+          <!-- Блок с корзиной переносится с главной страницы -->
+          <div class="catalog-list__basket">
+            <a class="basket" href="javascript: void(0)" title="Переход в корзину">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849">
+                <path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="catalog-list__item">
+          <img src="img/photo-2-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+          <!-- text2 - одинаковые стили текста здесь и на главной, в цене товара недели, в кнопке заказать, в преимуществах -->
+          <p class="text2 catalog-list__text2">Корзинка для белья</p>
+          <p class="feature catalog-list__feature">Диаметр 15 см, высота 10 см</p>
+          <!-- brandtext - одинаковые стили в описании и хар-ках здесь и в ценена странице каталога -->
+          <p class="brandtext catalog-list__brandtext">690 руб.</p>
+          <!-- Блок с корзиной переносится с главной страницы -->
+          <div class="catalog-list__basket">
+            <a class="basket" href="javascript: void(0)" title="Переход в корзину">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849">
+                <path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/>
+              </svg>
+            </a>
+          </div>
+        </li>
+        <li class="catalog-list__item">
+          <img src="img/photo-3-mobile.png" alt="Зайчик-попрыгайчик" width="260" height="195">
+          <!-- text2 - одинаковые стили текста здесь и на главной, в цене товара недели, в кнопке заказать, в преимуществах -->
+          <p class="text2 catalog-list__text2">Большая корзинка для игрушек
+          </p>
+          <p class="feature catalog-list__feature">Диаметр 30 см, высота 30 см</p>
+          <!-- brandtext - одинаковые стили в описании и хар-ках здесь и в ценена странице каталога -->
+          <p class="brandtext catalog-list__brandtext">1 500 руб.</p>
+          <!-- Блок с корзиной переносится с главной страницы -->
+          <div class="catalog-list__basket">
+            <a class="basket" href="javascript: void(0)" title="Переход в корзину">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849">
+                <path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/>
+              </svg>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <footer class="footer">
+      <div class="footer-item footer-item__mobile footer-item__table footer-item__desktop">
+        <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer-item_social insta">Инстаграм
+        </a>
+        <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer-item_social facebook">Фейсбук
+        </a>
+        <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer-item_social twit">Твиттер
+        </a>
+      </div>
+      <div class="footer-bottom footer-bottom__mobile footer-bottom__table footer-bottom__desktop">
+        Разработано
+        <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу HTML Academy" class="footer-bottom__logomini">
+          <img src="img/htmlacademy-svg.svg" alt="Логотип академии" width="27" height="34" class="footer-image__logomini">
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
