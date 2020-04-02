@@ -9,7 +9,7 @@
     <header class="header">
       <!-- Разметка для БЛОКА логотипа -->
       <!-- header__logo задаст внешние отступы логотипу в мобил. и десктоп. версиях, header__logo_table задаст их в планшетной-->
-      <div class="logo header__logo header__logo-table">
+      <div class="logo header__logo">
         <a class="header__logo-main" href="index.html" title="Переход на главную страницу">
           <img src="img/mishka-logo-mobile-svg.svg" alt="Логотип mishka" width="86" height="35">
         </a>
@@ -22,7 +22,7 @@
         </button>
         <!-- Разметка для БЛОКА разделов сайта
         main-nav__mobile - расположение блоков в мобил. версии, main-nav__table - в планшетной, main-nav__desktop - в десктопной, site-list - общие стили разделов для всех версий -->
-        <ul class="main-nav__mobile  main-nav__table main-nav__desktop site-list">
+        <ul class="main-nav__site-list site-list">
           <li class="site-list__item">
             <a href="catalog.html" title="Переход на страницу Каталог товаров" class="all">Каталог товаров</a>
           </li>
@@ -115,13 +115,16 @@
         <!-- блок  ФИО-->
         <div class="nsf form__nsf">
           <p class="all nsf-name nsf__nsf-name">ФИО</p>
-            <label class="all">Имя:
+            <label class="nameform">
+              <span class="all">Имя:</span>
               <input type="text" name="name" placeholder="Введите ваше имя*" required>
             </label>
-            <label class="all">Фамилия:
+            <label class="nameform">
+              <span class="all">Фамилия:</span>
               <input type="text" name="surname" placeholder="Укажите фамилию*" required>
             </label>
-            <label class="all">Отчество:
+            <label class="nameform">
+              <span class="all">Отчество:</span>
               <input type="text" name="patronymic" placeholder="Отчество, если желаете">
             </label>
         </div>
@@ -150,7 +153,7 @@
       </form>
     </main>
     <footer class="footer">
-      <div class="footer-item footer__footer-item-mobile footer__footer-item-table footer__footer-item-desktop">
+      <div class="footer-item">
         <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer-item_social insta">Инстаграм
         </a>
         <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer-item_social facebook">Фейсбук
@@ -158,7 +161,7 @@
         <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer-item_social twit">Твиттер
         </a>
       </div>
-      <div class="element footer-bottom footer__footer-bottom-mobile footer__footer-bottom-table footer__footer-bottom-desktop">
+      <div class="element footer-bottom">
         Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»" class="footer-bottom__logomini">
           <img src="img/htmlacademy-svg.svg" alt="Логотип академии" width="27" height="34" class="footer-bottom__image-logomini">
