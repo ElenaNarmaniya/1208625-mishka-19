@@ -1,0 +1,76 @@
+.form__phone {
+  /*border: 1px solid green;/*#ececec*/
+  text-align: left;
+  position: relative;
+  width: 260px;
+  min-height: 73px;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.phone__number {
+  /*border: 1px solid green;/*#ececec*/
+  font-family: opensansbold;
+  line-height: 0.94;
+  text-align: left;
+  color: #63d1bb;
+  min-width: 36px;
+  .zero;
+  padding: 36px 0;
+  padding-bottom: 9px;
+  position: relative;
+}
+.phone__data {
+  /*border: 1px solid green;/*#ececec*/
+  display: flex;
+  flex-direction: column;
+  height: 52px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input[type="tel"] {
+  width: 260px;
+  height: 52px;
+  outline: none;
+  border: none;
+  font-family: opensans;
+  font-size: 19px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.95;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(68, 68, 68, 0.3);
+  box-shadow: inset 0px -2px 0 0 #000000;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+.phone__data::after {
+  content: "";
+  width: 25px;
+  height: 24px;
+  box-sizing: inherit;
+  background: url('../img/phone-svg.png') no-repeat top center;
+  position: absolute;
+  top: 11px;
+  left: 227px;
+  z-index: 5;
+}
+.phone__data::before {
+  content: "";
+  background-color: #63d1bb;
+  box-sizing: inherit;
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: -18px;
+  left: 62px;
+  z-index: 30;
+}

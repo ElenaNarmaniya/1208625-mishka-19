@@ -1,0 +1,108 @@
+.brandweek {
+    /*border: 1px solid red; /**/
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+.bold {
+  .set-font-size(25px);
+}
+.brandweek__bold {
+  font-family: opensansbold;
+  text-align: left;
+  color: #000000;
+  line-height: 1.2;
+  width: 320px;
+  min-height: 24px;
+  /*border: 1px solid red;/**/
+  margin-top: 30px;
+  padding-left: 30px;
+  box-sizing: border-box;
+  position: relative;
+}
+.brandweek__bold::after {
+  content: "ТОВАР НЕДЕЛИ";
+  .set-font-size(17px);
+  font-family: opensansbold;
+  text-align: left;
+  color: #63d1bb;
+  line-height: 1.18;
+  box-sizing: inherit;
+  position: absolute;
+  top: 35px;
+  left: 30px;
+}
+.medium {
+  .set-font-size(15px);
+}
+.brandweek__medium {
+  font-family: opensans;
+  text-align: left;
+  color: #444444;
+  line-height: 1.6;
+  width: 260px;
+  min-height: 63px;
+  /*border: 1px solid red;/**/
+  margin-top: 25px;
+  box-sizing: border-box;
+  position: relative;
+}
+.brandweek__rows {
+  /*border: 1px solid red;/**/
+  display: table;
+  width: 320px;
+  height: 117px;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  border-spacing: 0px 0px;
+}
+.rows__first {
+  display: table-row;
+}
+.rows-first_item {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  /*border: 1px solid green;/**/
+}
+.brandweek__rows .rows__column {
+  display: table-column;
+
+}
+.brandweek__image-brand {
+  margin-top: 18px;
+}
+.brandweek__cost {
+  margin: 0;
+  padding: 0;
+  /*border: 1px solid red; /**/
+  min-height: 17px;
+  padding: 28px 67px;
+  text-align: center;
+  color: #444444;
+  font-family: opensansbold;
+  line-height: 1.41;
+}
+.brandweek__button {
+  text-align: center;
+  color: #444444;
+  font-family: opensansbold;
+  line-height: 1.18;
+}
+.button {
+ text-decoration:  none;
+ box-sizing: border-box;
+ padding: 20px 84px;
+ width: 260px;
+  min-height: 52px;
+  border: 2px solid #444444;
+  background-color: #ffffff;
+}
