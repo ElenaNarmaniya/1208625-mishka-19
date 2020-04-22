@@ -2,210 +2,217 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
-      <!-- Разметка для БЛОКА логотипа -->
-      <!-- header__logo задаст внешние отступы логотипу в мобил. и десктоп. версиях, header__logo_table задаст их в планшетной-->
-      <div class="logo header__logo">
+      <!-- Разметка для элемента логотипа -->
+      <div class="header__logo">
         <img src="img/mishka-logo-mobile-svg.svg" alt="Логотип mishka" width="86" height="35">
       </div>
       <!-- кнопка для иконки бургера в мобил. версии, hidden - для скрытия в других версиях -->
-      <a class="burger main-nav__burger-menu hidden" title="Открытие меню" href="javascript: void(0)">
+      <a class="main-nav__burger" title="Открытие меню" href="javascript: void(0)">
         <img src="img/menu-svg.svg" alt="Бургер" width="20" height="14">
       </a>
       <!-- Разметка для БЛОКА навигации -->
       <nav class="main-nav">
-        <ul class="main-nav__site-list site-list">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a href="catalog.html" title="Переход на страницу Каталог товаров" class="site-list__link all">Каталог товаров</a>
+            <a href="catalog.html" title="Переход на страницу Каталог товаров" class="site-list__link">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html" title="Переход на страницу Вязание на заказ" class="site-list__link all">Вязание на заказ</a>
+            <a href="form.html" title="Переход на страницу Вязание на заказ" class="site-list__link">Вязание на заказ</a>
           </li>
         </ul>
         <!-- Разметка для БЛОКА поиска -->
-        <div class="search-block main-nav__search-block">
-          <button type="button" class="all search-block__search-button">
+        <div class="main-nav__search search-block">
+          <button type="button" class="search-block__button">
             <svg xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-0.8 -0.8 17.6 17.6" class="search__svg">
               <path fill="#231F20" d="M16.47 14.93l-3.415-3.415c.965-1.289 1.545-2.881 1.545-4.616C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33.607 0 1.1-.492 1.1-1.1 0-.24-.061-.499-.33-.769zM1.399 6.899c0-3.038 2.462-5.5 5.5-5.5s5.5 2.462 5.5 5.5-2.462 5.5-5.5 5.5-5.5-2.461-5.5-5.5z"/>
-            </svg>Поиск по сайту
+            </svg>
+            <p class="search-block__text">Поиск по сайту</p>
           </button>
-          <form action="#" method="post" class="main-nav__search-form">
+          <form action="#" method="post" class="search-block__form">
             <input type="search" placeholder="Поле поиска" name="search" autocomplete="on">
           </form>
         </div>
         <!-- Разметка для БЛОКА корзины -->
-        <!-- Блок с корзиной переносится страницу каталога -->
-        <div class="basket-box main-nav__basket">
-          <a class="basket all" href="javascript: void(0)" title="Переход в корзину">
+        <div class="main-nav__basket basket-box">
+          <a class="basket-box__basket" href="javascript: void(0)" title="Переход в корзину">
             <svg xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849" class="basket__svg">
               <path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/>
             </svg>Корзина: пока пуста
           </a>
         </div>
-        <!-- Разметка для БЛОКА меню в десктопной версии, названия стилей под вопросом, как отобразятся в десктопе, hidden-mobile  - скрыли только в мобильной версии -->
-        <ul class="main-nav__site-list site-list hidden-mobile">
-          <li class="site-list__item">
-            <a href="javascript: void(0)" title="Переход на страницу Новые поступления" class="question">Новые поступления</a>
+        <!-- Разметку скрыли только в мобильной версии -->
+        <ul class="main-nav__bottom bottom-menu">
+          <li class="bottom-menu__item">
+            <a href="javascript: void(0)" title="Переход на страницу Новые поступления" class="bottom-menu__link">Новые поступления</a>
           </li>
-          <li class="site-list__item">
-            <a href="javascript: void(0)" title="Переход на страницу Распродажи" class="question">Распродажа</a>
+          <li class="bottom-menu__item">
+            <a href="javascript: void(0)" title="Переход на страницу Распродажи" class="bottom-menu__link">Распродажа</a>
           </li>
         </ul>
-        <!-- Разметка для БЛОКА доставки, название класса под вопросом, hidden-mobile  - скрыли только в мобильной версии -->
-        <div class="send hidden-mobile">
-          <p cass="question">Бесплатная доставка по России</p>
+        <!-- Разметку скрыли только в мобильной версии -->
+        <div class="main-nav__send send">
+          <p cass="send__text">Бесплатная доставка по России</p>
         </div>
       </nav>
     </header>
     <main class="main-page">
-      <!-- Разметка для БЛОКА заголовка и фонового изображения -->
-      <section class="background">
-        <img src="img/hero-mobile.png" alt="Изображение - Мишки в домике" width="575" height="373" class="background__foto">
+      <!-- Разметка для заголовка и фонового изображения -->
+      <section class="main-page__background">
+        <img src="img/hero-mobile.png" alt="Изображение - Мишки в домике" width="575" height="373" class="main-page__foto">
         <!-- text - одинаковый здесь и на странице каталога в названии "Каталог товаров" на стр-це формы в названии"Вязание на заказ" -->
-        <p class="background__text text background__text-mobile">
+        <p class="main-page__text">
           Милые штуки ручной<br> работы для дома
         </p>
       </section>
       <!-- Разметка для БЛОКА "Предметы интерьера, детские игрушки, block - для отображения в планш. и десктоп. версиях-->
-      <section class="site-block">
-        <ul class="block site-block__list">
-          <li class="block__item">
-            <a href="javascript: void(0)" title="Переход на страницу Предметы интерьера" class="block__item-element element">
-              <p class="block__item_text">Предметы интерьера</p>
-              <img src="img/interior-svg.png" alt="Иконка раздела - Предметы интерьера" width="40" height="62" class="block__item_image">
+      <section class="main-page__block site-block">
+        <ul class="site-block__list">
+          <li class="site-block__item">
+            <a href="javascript: void(0)" title="Переход на страницу Предметы интерьера" class="site-block__element">
+              <p class="site-block__text">Предметы интерьера</p>
+              <img src="img/interior-svg.png" alt="Иконка раздела - Предметы интерьера" width="40" height="62" class="site-block__image">
             </a>
           </li>
-          <li class="block__item">
-            <a href="javascript: void(0)" title="Переход на страницу Детские игрушки" class="block__item-element element">
-              <p class="block__item_text">Детские игрушки</p>
-              <img src="img/toy-svg.png" alt="Иконка раздела - Детские игрушки" width="60" height="60" class="block__item_image">
+          <li class="site-block__item">
+            <a href="javascript: void(0)" title="Переход на страницу Детские игрушки" class="site-block__element">
+              <p class="site-block__text">Детские игрушки</p>
+              <img src="img/toy-svg.png" alt="Иконка раздела - Детские игрушки" width="60" height="60" class="site-block__image">
             </a>
           </li>
         </ul>
       </section>
       <!-- Разметка для БЛОКА "Товар недели" -->
-      <section class="brandweek">
+      <section class="main-page__brandweek brandweek">
         <!-- Разметка ТОВАР НЕДЕЛИ  ставим псевдоэлементом к заголовку -->
-        <p class="bold brandweek__bold">Вязаные корзинки</p>
-        <p class="medium brandweek__medium">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <div class="rows brandweek__rows">
+        <p class="brandweek__bold">Вязаные корзинки</p>
+        <p class="brandweek__medium">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+        <div class="brandweek__rows">
           <div class="rows__column"></div>
           <div class="rows__column"></div>
-          <div class="rows__first rows__rows_first">
-            <p class="medium rows-first_item">Цвет:</p>
-            <p class="medium rows-first_item">«Тиффани»/серый</p>
+          <div class="rows__first">
+            <p class="rows__first_item">Цвет:</p>
+            <p class="rows__first_item">«Тиффани»/серый</p>
           </div>
-          <div class="rows__first rows__rows_first">
-            <p class="medium rows-first_item">Диаметр:</p>
-            <p class="medium rows-first_item">25 см</p>
+          <div class="rows__first">
+            <p class="rows__first_item">Диаметр:</p>
+            <p class="rows__first_item">25 см</p>
           </div>
-            <div class="rows__first rows__rows_first">
-            <p class="medium rows-first_item">Высота:</p>
-            <p class="medium rows-first_item">15 см</p>
+            <div class="rows__first">
+            <p class="rows__first_item">Высота:</p>
+            <p class="rows__first_item">15 см</p>
           </div>
         </div>
-        <img src="img/triple-set-mobile.png" alt="Вязаные корзинки" width="260" height="315" class="brandweek__image-brand">
-        <p class="all brandweek__cost">Цена: 990 руб.</p>
-        <a href="javascript: void(0)" title="Кнопка - Заказать" class="button all brandweek__button">
+        <img src="img/triple-set-mobile.png" alt="Вязаные корзинки" width="260" height="315" class="brandweek__image">
+        <p class="brandweek__cost">Цена: 990 руб.</p>
+        <a href="javascript: void(0)" title="Кнопка - Заказать" class="button brandweek__button">
           ЗАКАЗАТЬ
         </a>
       </section>
       <!-- Разметка для БЛОКА "Коротко о нас:" -->
-      <section class="about-us">
-        <p class="bold about-us__bold main-nav__bold">Коротко о нас:</p>
-        <ul class="about-us__list list">
+      <section class="main-page__about-us about-us">
+        <p class="about-us__bold">Коротко о нас:</p>
+        <ul class="about-us__list">
           <li class="icon-ecology icon">
-            <p class="all list__item">Экологически чистые материалы</p>
+            <p class="about-us__list-item">Экологически чистые материалы</p>
           </li>
           <li class="icon-cost icon">
-            <p class="all list__item">Скандинавский стиль по российской цене</p>
+            <p class="about-us__list-item">Скандинавский стиль по российской цене</p>
           </li>
           <li class="icon-like icon">
-            <p class="all list__item">Увеличивает лайки на фотографиях</p>
+            <p class="about-us__list-item">Увеличивает лайки на фотографиях</p>
           </li>
           <li class="icon-love icon">
-            <p class="all list__item">Связано вручную с любовью и умилением</p>
+            <p class="about-us__list-item">Связано вручную с любовью и умилением</p>
           </li>
           <li class="icon-country icon">
-            <p class="all list__item">Поддержка отечественного производителя</p>
+            <p class="about-us__list-item">Поддержка отечественного производителя</p>
           </li>
           <li class="icon-gift icon">
-            <p class="all list__item">Поставляется в подарочной упаковке</p>
+            <p class="about-us__list-item">Поставляется в подарочной упаковке</p>
           </li>
         </ul>
       </section>
       <!-- Разметка для БЛОКА "Отзывы" -->
-      <section class="reviews">
-        <p class="bold reviews__bold main-nav__bold">Отзывы</p>
-        <p class="medium reviews__medium">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <p class="all reviews__all">Анастасия Красильникова</p>
-        <p class="clue reviews__clue">@misssssiskras</p>
-        <ul class="pagination  reviews__pagination">
-          <li class="pagination__item">
-            <a href="#prev" title="Назад" class="arrow-pagination pagination__prev"><span class="visually-hidden">Назад</span>
+      <section class="main-page__reviews reviews">
+        <p class="reviews__bold">Отзывы</p>
+        <p class="reviews__medium">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <p class="reviews__all">Анастасия Красильникова</p>
+        <p class="reviews__clue">@misssssiskras</p>
+        <ul class="reviews__pagination">
+          <li class="reviews__pagination-item">
+            <a href="#prev" title="Назад" class="reviews__pagination-arrow pagination-prev"><span class="visually-hidden">Назад</span>
             </a>
           </li>
-          <li class="pagination__item">
-            <a href="#next" title="Вперед" class="arrow-pagination pagination__next"><span class="visually-hidden">Вперед</span>
+          <li class="reviews__pagination-item">
+            <a href="#next" title="Вперед" class="reviews__pagination-arrow pagination-next"><span class="visually-hidden">Вперед</span>
             </a>
           </li>
         </ul>
-        <a href="javascript: void(0)" class="button write reviews__button">
+        <a href="javascript: void(0)" class="button reviews__button">
           НАПИСАТЬ
         </a>
       </section>
       <!-- Разметка для БЛОКА "Контакты" -->
-      <section class="contacts">
-        <p class="write contacts__write">Контакты</p>
-        <div class="data contacts__data">
-          <div class="data-one data__data-one">
-            <p class="medium data-one_item">e-mail:</p>
-            <p class="medium data-second_item">адрес:</p>
+      <section class="main-page__contacts contacts">
+        <p class="contacts__write">Контакты</p>
+        <div class="contacts__data">
+          <div class="rows__column"></div>
+          <div class="rows__column"></div>
+          <div class="rows__first">
+            <p class="rows__first_item">e-mail:</p>
+            <p class="rows__first_item rows__first_line">info@mimimishkashop.ru</p>
           </div>
-          <div class="data-one data__data-second">
-            <p class="medium data-one_item data-one_line">info@mimimishkashop.ru</p>
-            <p class="medium data-second_item data-second_addres">г. Санкт-Петербург, ул. Большая Конюшенная,<br> д. 19/8, офис 101</p>
+          <div class="rows__first">
+            <p class="rows__first_item rows__first_name">адрес:</p>
+            <p class="rows__first_item rows__first_addres">г. Санкт-Петербург,<br> ул. Большая<br> Конюшенная,<br> д. 19/8, офис 101</p>
           </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A116ee1e9c4e5fed8ddabddb279cfa304176cb1557b112b4a71785a8ce3a7b751&amp;source=constructor" width="320" height="457" class="iframe">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A116ee1e9c4e5fed8ddabddb279cfa304176cb1557b112b4a71785a8ce3a7b751&amp;source=constructor" width="320" height="457" class="contacts__iframe">
         </iframe>
-        <div class="pin"></div>
-        <a href="javascript: void(0)" class="button write contacts__button">
+        <div class="contacts__pin"></div>
+        <a href="javascript: void(0)" class="button contacts__button">
           НАПИШИТЕ НАМ
         </a>
       </section>
     </main>
     <!-- Разметка для БЛОКА "Подвал" -->
     <footer class="footer">
-      <div class="footer-item">
-        <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer-item_social insta">Инстаграм
-        </a>
-        <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer-item_social facebook">Фейсбук
-        </a>
-        <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer-item_social twit">Твиттер
+      <div class="footer__logo">
+        <a class="footer__logo-main" href="index.html" title="Переход на главную страницу">
+          <img src="img/logo-footer-svg.svg" alt="Логотип mishka" width="102" height="34">
         </a>
       </div>
-      <div class="element footer-bottom">
-        <p class="footer__text">Разработано</p>
+      <div class="footer__item">
+        <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social insta">Инстаграм
+        </a>
+        <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social facebook">Фейсбук
+        </a>
+        <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social twit">Твиттер
+        </a>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__bottom-text">Разработано</p>
         <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
-          <img src="img/htmlacademy-svg.png" alt="Логотип академии" width="27" height="34" class="footer-bottom__logomini">
+          <img src="img/htmlacademy-svg.png" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
         </a>
       </div>
     </footer>
     <!-- Форма при нажатии на "Заказать"-->
     <section class="modal-form">
-      <p class="bold modal-form__bold">ДОБАВИТЬ В КОРЗИНУ</p>
-      <p class="medium modal-form__medium">Выберите размер:</p>
-      <ul class="size modal-form__size">
-        <li class="all size__item"><button class="modal__button">S</button></li>
-        <li class="all size__item"><button class="modal__button">M</button></li>
-        <li class="all size__item"><button class="modal__button">L</button></li>
+      <p class="modal-form__bold">ДОБАВИТЬ В КОРЗИНУ</p>
+      <p class="modal-form__medium">Выберите размер:</p>
+      <ul class="modal-form__size">
+        <li class="modal-form__size-item"><button class="modal-form__size-button">S</button></li>
+        <li class="modal-form__size-item"><button class="modal-form__size-button">M</button></li>
+        <li class="modal-form__size-item"><button class="modal-form__size-button">L</button></li>
       </ul>
-      <a href="javascript: void(0)" class="button all modal-form__button">
+      <a href="javascript: void(0)" class="button modal-form__button">
         ДОБАВИТЬ
       </a>
     </section>

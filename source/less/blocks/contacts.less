@@ -1,63 +1,185 @@
 .contacts {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  /*border: 1px solid blue; /**/
+  position: relative;
+
+  @media (min-width: 772px) {
+    min-width: 772px;
+    min-height: 930px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    width: 320px;
+    justify-content: space-between;
+    padding: 0 52px;
     margin: 0 auto;
-    padding: 0 30px;
-    /*border: 1px solid blue; /**/
+    margin-top: 45px;
+    /*border: 1px solid green;/**/
+  }
 }
-.write {
-  .set-font-size(18px);
+
+.contacts::after {
+
+  @media (min-width: 772px) {
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 772px;
+    height: 15px;
+    box-sizing: inherit;
+    background: url('../img/zigzag-line-desktop-svg.svg') no-repeat top center;
+    background-size: cover;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 21;
+  }
 }
+
 .contacts__write {
+  .set-font-size(18px);
   font-family: opensansbold;
   text-align: left;
   color: #000000;
   line-height: 1.67;
-  width: 260px;
+  min-width: 260px;
   min-height: 14px;
   /*border: 1px solid red;/**/
   margin-top: 95px;
   padding: 1px;
   box-sizing: border-box;
   position: relative;
+
+  @media (min-width: 772px) {
+    .set-font-size(43px);
+    line-height: 1.16;
+    min-width: 668px;
+    min-height: 32px;
+    /*border: 1px solid red;/**/
+  }
 }
+.contacts__write::after {
+  content: "";
+
+  @media (min-width: 772px) {
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 47px;
+    height: 81px;
+    box-sizing: inherit;
+    background: url('../img/flag-svg.png') no-repeat top center;
+    background-size: cover;
+    position: absolute;
+    top: -15px;
+    left: 620px;
+    z-index: 21;
+
+  }
+}
+
 .contacts__data {
+  position: relative;
   /*border: 1px solid red;/**/
-  display: flex;
-  width: 320px;
+  display: table;
+  min-width: 320px;
+  min-height: 166px;
   margin: 0;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: -20px;
   padding: 0 30px;
   box-sizing: border-box;
+  border-spacing: 0px 0px;
+
+  @media (min-width: 772px) {
+    display: flex;
+    min-width: 668px;
+    min-height: 77px;
+    padding: 0;
+    /*border: 1px solid red;/**/
+  }
 }
-.data-one {
-   /*border: 1px solid blue;/**/
-   display: flex;
-   flex-wrap: wrap;
-   width: 320px;
-   min-height: 166px;
+
+.contacts .rows__first_item {
+  border-bottom: none;/**/
+  /*border: 1px solid red;/**/
+
+  @media (min-width: 772px) {
+    .set-font-size(17px);
+    font-family: opensans;
+    text-align: left;
+    color: #444444;
+    line-height: 1.76;
+  }
 }
-.data-second_item {
-   /*border: 1px solid blue;/**/
-   margin-top: -37px;
+
+.contacts .rows__first:nth-of-type(3) {
+  height: 25px;
 }
-.data-second_addres {
-text-align: left;
-  width: 145px;
-  margin-top: 21px;
+
+.contacts .rows__first:nth-of-type(4) {
+  @media (min-width: 772px) {
+    margin-top: -35px;
+    margin-left: 55px;
+  }
 }
-.data-one_line {
-padding-bottom: 4px;
+
+.contacts .rows__first_line {
   border-bottom: 1px solid #63d1bb;
 }
-.iframe {
+
+.rows__first_name {
+  padding-top: 35px;
+  vertical-align: top;
+}
+
+.rows__first_addres {
+  width: 160px;
+  padding-top: 35px;
+  vertical-align: top;
+}
+
+.contacts__iframe {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  margin: 0;
+  margin-top: 42px;
   border: none;
   background: #ffffff url('../img/map-mobile@1x.jpg') no-repeat top center;
+
+  @media (min-width: 772px) {
+    /*border: 1px solid red;/**/
+    margin-bottom: 61px;
+    padding: 0;
+    width: 772px;
+    height: 457px;
+    background: #ffffff url('../img/map-tablet-1-x.png') no-repeat top center;
+    background-size: cover;
+  }
 }
+
+.contacts__pin {
+  position: absolute;
+  bottom: 300px;
+  left: 140px;
+  width: 67px;
+  height: 100px;
+  z-index: 100;
+  background-image: url('../img/map-pin-svg.svg');
+  font-size: 0;
+
+  @media (min-width: 772px) {
+    bottom: 420px;
+    left: 350px;
+  }
+}
+
 .contacts__button {
   text-align: center;
   color: #444444;
@@ -67,4 +189,12 @@ padding-bottom: 4px;
   margin-top: 39px;
   margin-bottom: 39px;
   padding: 20px 0;
+
+  @media (min-width: 772px) {
+    min-width: 230px;
+    line-height: 1.18;
+    font-size: 17px;
+    margin: -5px auto 57px auto;
+    padding: 20px 0;
+  }
 }

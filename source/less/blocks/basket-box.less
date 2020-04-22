@@ -1,0 +1,56 @@
+.basket-box {
+  display: flex;
+  background-color: #ffffff;
+  .header-shadow;
+  position: relative;
+  z-index: 3;
+  min-height: 79px;
+  box-sizing: border-box;
+
+  @media (min-width: 772px) {
+    min-width: 264px;
+    min-height: 88px;
+    padding: 0;
+    padding-right: 52px;
+    margin: 0;
+    margin-top: -132px;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(68, 68, 68, 0.2);
+    /*border: 1px solid green; /*убрать после*/
+  }
+}
+.basket-box__basket {
+  color: #000000;
+  font-family: opensansbold;
+  line-height: 1.41;
+  text-align: left;
+  text-decoration: none;
+  background-color: #ffffff;
+  .header-shadow;
+  .zero;
+  margin-left: 43px;
+  padding-top: 30px;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+
+   @media (min-width: 772px) {
+    text-align: right;
+    box-shadow: none;
+    margin-left: 60px;
+    margin-right: 0;
+    padding: 0;
+    padding-top: 30px;
+    padding-bottom: 24px;
+  }
+}
+.basket__svg {
+  position: relative;
+  left: -20px;
+}
+
+.basket__svg path {
+  fill: #231F20;
+  @media (min-width: 772px) {
+    fill: rgba(68, 68, 68, 0.2);
+  }
+}

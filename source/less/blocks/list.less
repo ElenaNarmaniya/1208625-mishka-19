@@ -1,0 +1,145 @@
+.list {
+  list-style: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  min-width: 320px;
+  box-sizing: border-box;
+  /*border: 1px solid green;/**/
+
+  @media (min-width: 772px) {
+    min-width: 772px;
+    padding: 0 52px;
+    margin-top: 67px;
+    /*border: 1px solid red;/**/
+  }
+}
+
+.list__item {
+  /*border: 1px solid blue;/**/
+  min-height: 374px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+
+  @media (min-width: 772px) {
+    min-width: 668px;
+    padding: 0;
+    min-height: 334px;
+    margin-bottom: 54px;
+  }
+}
+
+.list__image {
+
+  @media (min-width: 772px) {
+    /*border: 1px solid green;/**/
+    width: 334px;
+    height: 334px;
+  }
+}
+
+.list__image_img {
+
+   @media (min-width: 772px) {
+    width: 334px;
+    height: 334px;
+  }
+}
+
+.list__item-wrapper {
+  border: 1px solid #ececec;/*#ececec*/
+  width: 260px;
+  min-height: 179px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding-left: 28px;
+  padding-right: 28px;
+  margin-top: -7px;
+
+  @media (min-width: 772px) {
+    width: 330px; /*335*/
+    min-height: 334px;
+    margin-top: 0px;
+  }
+}
+
+.list__item-all {
+  font-family: opensansbold;
+  line-height: 1.41;
+  text-align: left;
+  color: #000000;
+  text-decoration: none;
+  margin-top: 10px;
+
+  @media (min-width: 772px) {
+    .set-font-size(20px);
+    line-height: 1.2;
+    margin-top: -25px;
+  }
+}
+.list__item-normal {
+  .set-font-size(13px);
+  font-family: opensans;
+  line-height: 2.31;
+  text-align: left;
+  color: #444444;
+  .zero;
+  margin-top: -15px;
+
+  @media (min-width: 772px) {
+    .set-font-size(15px);
+    line-height: 2;
+    margin-top: -175px;
+  }
+}
+.list__item-bottom {
+  /*border: 1px solid green;/*#ececec*/
+  border: none;
+  border-top: 1px solid #ececec; /**/
+  width: 260px;
+  min-height: 71px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+
+  @media (min-width: 772px) {
+    /*border: 1px solid green;/*#ececec*/
+    margin-bottom: -60px;
+  }
+}
+
+.list__item-brandtext {
+  .set-font-size(15px);
+  font-family: opensansbold;
+  line-height: 1.6;
+  text-align: left;
+  color: #000000;
+
+  @media (min-width: 772px) {
+    .set-font-size(17px);
+    line-height: 1.41;
+  }
+}
+.list__item-basket {
+  /*border: 1px solid red; /**/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
