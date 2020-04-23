@@ -1,7 +1,15 @@
 .main-nav {
   /*display: none; /**/
 
-}
-.hidden-mobile {
-  display: none;
+  @media (min-width: 772px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(68, 68, 68, 0.2);
+    /*border: 1px solid red;/**/
+  }
 }

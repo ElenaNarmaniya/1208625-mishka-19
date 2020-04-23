@@ -1,17 +1,30 @@
 .brandweek {
-    /*border: 1px solid red; /**/
-    width: 320px;
-    margin: 0 auto;
-    padding: 0 30px;
+  /*border: 1px solid red; /**/
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+
+  @media (min-width: 772px) {
+    min-width: 772px;
+    min-height: 515px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 52px;
+    margin: 0 auto;
+    margin-bottom: 53px;
+    /*border: 1px solid green;/**/
+  }
 }
-.bold {
-  .set-font-size(25px);
-}
+
 .brandweek__bold {
+  .set-font-size(25px);
   font-family: opensansbold;
   text-align: left;
   color: #000000;
@@ -23,7 +36,18 @@
   padding-left: 30px;
   box-sizing: border-box;
   position: relative;
+
+  @media (min-width: 772px) {
+    .set-font-size(43px);
+    line-height: 1.16;
+    min-width: 430px;
+    min-height: 42px;
+    padding-left: 0;
+    margin-top: 43px;
+    /*border: 1px solid red;/**/
+  }
 }
+
 .brandweek__bold::after {
   content: "ТОВАР НЕДЕЛИ";
   .set-font-size(17px);
@@ -35,11 +59,17 @@
   position: absolute;
   top: 35px;
   left: 30px;
+
+  @media (min-width: 772px) {
+    text-align: center;
+    line-height: 1;
+    top: 15px;
+    left: 570px;
+  }
 }
-.medium {
-  .set-font-size(15px);
-}
+
 .brandweek__medium {
+  .set-font-size(15px);
   font-family: opensans;
   text-align: left;
   color: #444444;
@@ -50,36 +80,73 @@
   margin-top: 25px;
   box-sizing: border-box;
   position: relative;
+
+  @media (min-width: 772px) {
+    margin-top: -302px;
+    .set-font-size(17px);
+    line-height: 1.76;
+    width: 292px;
+    order: 1;
+  }
 }
+
 .brandweek__rows {
   /*border: 1px solid red;/**/
   display: table;
-  width: 320px;
-  height: 117px;
+  min-width: 320px;
+  min-height: 117px;
   margin: 0;
   margin-top: 10px;
   padding: 0 30px;
   box-sizing: border-box;
   border-spacing: 0px 0px;
+
+  @media (min-width: 772px) {
+    order: 3;
+    margin-top: -460px;
+    padding: 0;
+    min-width: 292px;
+  }
 }
+
 .rows__first {
   display: table-row;
 }
-.rows-first_item {
+
+.rows__first_item {
   display: table-cell;
+  .set-font-size(15px);
+  width: 67px;
+  line-height: 1.33;
   text-align: left;
   vertical-align: middle;
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
   /*border: 1px solid green;/**/
 }
+
 .brandweek__rows .rows__column {
   display: table-column;
+}
+.rows__first .rows-first_item:nth-child(2) {
+  padding-left: 15px;
+  width: 129px;
 
+  @media (min-width: 772px) {
+    padding-left: 0;
+  }
 }
-.brandweek__image-brand {
+
+.brandweek__image {
   margin-top: 18px;
+
+  @media (min-width: 772px) {
+    width: 333px;
+    height: 404px;
+    order: 2;
+  }
 }
+
 .brandweek__cost {
   margin: 0;
   padding: 0;
@@ -90,19 +157,43 @@
   color: #444444;
   font-family: opensansbold;
   line-height: 1.41;
+  box-sizing: border-box;
+
+  @media (min-width: 772px) {
+    min-width: 292px;
+    padding: 34px 74px;
+    text-align: center;
+    line-height: 1.2;
+    .set-font-size(20px);
+    order: 4;
+    margin-top: -235px;
+    margin-right: 220px;
+  }
 }
+
 .brandweek__button {
   text-align: center;
   color: #444444;
   font-family: opensansbold;
   line-height: 1.18;
+
+  @media (min-width: 772px) {
+    order: 5;
+    margin-top: -65px;
+  }
 }
+
 .button {
- text-decoration:  none;
- box-sizing: border-box;
- padding: 20px 84px;
- width: 260px;
+  text-decoration:  none;
+  box-sizing: border-box;
+  padding: 20px 84px;
+  min-width: 260px;
   min-height: 52px;
   border: 2px solid #444444;
   background-color: #ffffff;
+
+  @media (min-width: 772px) {
+    min-width: 292px;
+    padding: 20px 101px;
+  }
 }

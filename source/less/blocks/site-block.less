@@ -1,55 +1,104 @@
 .site-block {
-    width: 320px;
-    min-height: 206px;
-    margin: 0 auto;
-    margin-top: -30px;
-    /*border: 1px solid red;/**/
-
+  position: relative;
+  z-index: 20;
 }
+
 .site-block__list {
+  position: relative;
+  z-index: 2;
+  width: 320px;
+  min-height: 206px;
+  margin: 0 auto;
+  margin-top: -30px;
+  /*border: 1px solid red;/**/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+
+  @media (min-width: 772px) {
+    min-width: 772px;
+    min-height: 119px;
+    margin: 0 auto;
+    margin-top: -118px;
+    /*border: 1px solid red;/**/
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0;
-    margin: 0;
+    padding: 0 52px;
     list-style: none;
-    box-sizing: border-box;
+  }
 }
-.block__item {
+
+.site-block__list::after {
+
+  @media (min-width: 772px) {
+    content: "";
+    margin: 0;
+    padding: 0;
+    width: 770px;
+    height: 24px;
+    box-sizing: inherit;
+    background: url('../img/zigzag-fill-desktop-svg.svg') no-repeat top center;
+    background-size: cover;
+    position: absolute;
+    top: 105px;
+    left: 0;
+    z-index: 21;
+  }
+}
+
+.site-block__item {
   margin: 0;
   padding: 0;
   background-color: #63d1bb;
 }
-.site-block__list .block__item:nth-child(2) {
+.site-block__list .site-block__item:nth-child(2) {
   background-color: #56c3b2;
 }
-.element {
-  .set-font-size(19px);
-}
-.block__item-element {
+.site-block__element {
   width: 320px;
   min-height: 103px;
   display: flex;
-  /*.zero;/**/
   padding-left: 30px;
   text-align: left;
   color: #ffffff;
+  .set-font-size(19px);
   font-family: opensansbold;
   line-height: 1.26;
   text-decoration: none;
   box-sizing: border-box;
-  vertical-align: middle;
+
+  @media (min-width: 772px) {
+    min-width: 334px;
+    min-height: 119px;
+    display: flex;
+    padding-left: 36px;
+    color: #ffffff;
+    .set-font-size(20px);
+    font-family: opensansbold;
+    line-height: 1.5;
+  }
 }
-.block__item_text {
+
+.site-block__text {
   /*border: 1px solid red; /**/
   width: 106px;
   min-height: 43px;
   padding-right: 109px;
   padding-top: 10px;
+
+  @media (min-width: 772px) {
+    max-width: 111px;
+    min-height: 50px;
+  }
 }
-.block__item_image {
+
+.site-block__image {
   display: flex;
   margin: auto 0;
-
 }

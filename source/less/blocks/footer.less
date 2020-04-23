@@ -1,25 +1,55 @@
 .footer {
-    /*border: 1px solid red;/**/
-    box-sizing: border-box;
+  /*border: 1px solid red;/**/
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 30px;
+  background-color: #f1f1f1;
+
+   @media (min-width: 772px) {
+    min-width: 772px;
+    min-height: 143px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
-    width: 320px;
+    justify-content: space-between;
+    padding: 0 52px;
     margin: 0 auto;
-    padding: 0 30px;
-    background-color: #f1f1f1;
+    /*border: 1px solid green;/**/
+  }
 }
-.footer-item {
+
+.footer__logo {
+  display: none;
+
+  @media (min-width: 772px) {
+    display: flex;
+    /*border: 1px solid green;/**/
+  }
+}
+
+.footer__item {
   display: flex;
   align-items: center;
   /*border: 1px solid green; /*убрать после*/
   border-bottom: 1px solid rgba(68, 68, 68, 0.1);
-  width: 260px;
+  min-width: 260px;
   min-height: 81px;
   font-size: 0;
   box-sizing: border-box;
+
+  @media (min-width: 772px) {
+    border-bottom: none;
+    margin-right: auto;
+    margin-left: 159px;
+    min-width: 141px;
+  }
 }
-.footer-item_social {
+.footer__item-social {
   text-align: left;
   box-sizing: border-box;
 }
@@ -36,6 +66,10 @@
   width: 22px;
   height: 21px;
   margin-left: 52px;
+
+  @media (min-width: 772px) {
+    margin-left: 0px;
+  }
 }
 .facebook {
   background: #f1f1f1 url('../img/fb-svg.png') no-repeat;
@@ -44,25 +78,42 @@
   height: 28px;
   margin-left: 40px;
 }
-.footer-bottom {
+.footer__bottom {
   display: flex;
   box-sizing: border-box;
+  .set-font-size(19px);
   font-family: opensansbold;
   text-align: left;
   color: #000000;
   line-height: 0.95;
   /*border: 1px solid green; /*убрать после*/
-  width: 320px;
-  height: 80px;
+  min-width: 320px;
+  min-height: 80px;
+
+  @media (min-width: 772px) {
+    border-bottom: none;
+    margin-top: 0px;
+    margin-left: auto;
+    min-width: 182px;
+  }
 }
-.footer-bottom__logomini {
+.footer__bottom-logomini {
   margin-left: 30px;
   padding-top: 22px;
 
+   @media (min-width: 772px) {
+    margin-left: 30px;
+  }
+
+
 }
-.footer__text {
+.footer__bottom-text {
   margin: 0;
-  padding: 0;
+  padding: 1px;
   padding-top: 28px;
   padding-left: 69px;
+
+  @media (min-width: 772px) {
+    padding-left: 0px;
+  }
 }
