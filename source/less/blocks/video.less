@@ -1,3 +1,5 @@
+/* Файл blocks/video.less */
+
 .video {
   margin: 0 auto;
   margin-bottom: 58px;
@@ -26,6 +28,16 @@
     margin-bottom: 63px;
     /*border: 1px solid green;/**/
   }
+
+  @media (min-width: 1150px) {
+    width: 1150px;
+    min-height: 455px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    margin-bottom: 105px;
+    /*border: 1px solid green;/**/
+  }
 }
 
 .video__wrapper {
@@ -42,6 +54,10 @@
 
   @media (min-width: 772px) {
     min-width: 668px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 1050px;
   }
 }
 
@@ -72,6 +88,21 @@
     padding-bottom: 41px;
     order: 2;
   }
+
+  @media (min-width: 1150px) {
+    /*border: 1px solid green;/**/
+    min-width: 230px;
+    min-height: 44px;
+    .set-font-size(20px);
+    font-family: opensansbold;
+    text-align: left;
+    line-height: 1.2;
+    margin-right: 0;
+    margin-top: 100px;
+    padding: 0;
+    padding-right: 57px;
+    order: 2;
+  }
 }
 
 .video__wrapper-svg {
@@ -82,6 +113,12 @@
   @media (min-width: 772px) {
     top: 495px;
     left: 34px;
+  }
+
+  @media (min-width: 1150px) {
+    top: 47px;
+    left: 763px;
+    order: 1;
   }
 }
 
@@ -96,6 +133,15 @@
     /*border: 1px solid red; /**/
     order: 1;
   }
+
+  @media (min-width: 1150px) {
+    width: 682px;
+    min-height: 455px;
+    /*border: 1px solid red; /**/
+    order: 5;
+    margin-right: auto;
+    margin-top: -460px; /*-262*/
+  }
 }
 
 .video__image_img {
@@ -103,6 +149,11 @@
 
   @media (min-width: 772px) {
     width: 668px;
+    height: 455px;
+  }
+
+  @media (min-width: 1150px) {
+    width: 682px;
     height: 455px;
   }
 }
@@ -119,7 +170,15 @@
     top: 189px;
     left: 283px;
   }
+
+  @media (min-width: 1150px) {
+    width: 101px;
+    height: 77px;
+    top: 190px;
+    left: 291px;
+  }
 }
+
 .video__words {
   .set-font-size(13px);
   font-family: opensans;
@@ -146,7 +205,20 @@
     order: 3;
     /*border: 1px solid blue;/**/
   }
+
+  @media (min-width: 1150px) {
+    display: flex;
+    width: 230px;
+    min-height: 106px;
+    padding-left: 372px;
+    padding-right: 57px;
+    padding-top: 30px;
+    order: 3;
+    margin-left: auto;
+    /*border: 1px solid blue;/**/
+  }
 }
+
 .video__button {
   min-width: 192px;
   min-height: 52px;
@@ -167,6 +239,14 @@
     margin-top: 40px;
     margin-bottom: 46px;
     order: 4;
+  }
+
+  @media (min-width: 1150px) {
+    min-width: 230px;
+    margin-left: auto;
+    margin-right: 57px;
+    margin-top: 51px;
+    margin-bottom: 60px;
   }
 }
 

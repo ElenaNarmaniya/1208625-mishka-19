@@ -1,3 +1,5 @@
+/* Файл blocks/main-page.less */
+
 .main-page__background {
   position: relative;
   z-index: 1;
@@ -9,9 +11,14 @@
   margin-top: -30px;
 
   @media (min-width: 772px) {
-    margin-top: -45px; /*подтяжка фона*/
+    margin-top: -72px; /*подтяжка фона*/
+  }
+
+  @media (min-width: 1150px) {
+    margin-top: -55px; /*подтяжка фона*/
   }
 }
+
 .main-page__foto {
   display: flex;
   flex-wrap: wrap;
@@ -23,6 +30,7 @@
     height: 746px;
   }
 }
+
 .main-page__text {
   .zero;
   color: #010000;
@@ -44,5 +52,13 @@
     top: 161px;
     left: 139px;
     min-width: 494px;
+  }
+
+  @media (min-width: 1150px) {
+    .set-font-size(53px);
+    line-height: 1.08;
+    top: 161px;
+    left: 273px;
+    min-width: 604px;
   }
 }

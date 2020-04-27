@@ -1,12 +1,20 @@
+/* Файл blocks/search-block.less */
+
 .search-block {
   margin: 0;
   position: relative;
 
   @media (min-width: 772px) {
-    margin-top: -132px; /*передвижениеи вверх из навигации*/
+    margin-top: -160px; /*передвижениеи вверх из навигации*/
+    margin-left: auto;
+  }
+
+  @media (min-width: 1150px) {
+    margin-top: 0px; /*передвижениеи вверх из навигации*/
     margin-left: auto;
   }
 }
+
 .search-block__form {
   display:  none;
 }
@@ -41,9 +49,15 @@
     box-shadow: none;
     border: 1px solid rgba(68, 68, 68, 0.2); /**/
     border-top: none;
+    border-bottom: none;
     /*border: 1px solid green;/**/
   }
+
+   @media (min-width: 1150px) {
+    border-bottom: 1px solid rgba(68, 68, 68, 0.2); /**/
+  }
 }
+
 .search__svg {
   position: relative;
   left: -26px;
@@ -51,6 +65,7 @@
 
 .search__svg path {
   fill: #231F20;
+
   @media (min-width: 772px) {
     fill: rgba(68, 68, 68, 0.2);
   }

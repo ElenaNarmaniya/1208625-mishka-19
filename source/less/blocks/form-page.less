@@ -1,3 +1,5 @@
+/* Файл blocks/form-page.less */
+
 .form-page__name {
   display: flex;
   flex-direction: column;
@@ -18,13 +20,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 52px;
-    margin-top: -44px;
+    margin-top: -70px;
     position: relative;
+    /*border: 1px solid green;/**/
+  }
+
+  @media (min-width: 1150px) {
+    width: 1150px;
+    min-height: 255px;
+    padding: 0 50px;
+    margin-top: -55px;
     /*border: 1px solid green;/**/
   }
 }
 
 .form-page__name::after {
+
   @media (min-width: 772px) {
     content: "";
     margin: 0;
@@ -38,6 +49,12 @@
     top: 212px;
     left: 0;
     z-index: 21;
+  }
+
+  @media (min-width: 1150px) {
+    width: 1150px;
+    height: 34px;
+    top: 222px;
   }
 }
 
@@ -54,7 +71,13 @@
     .set-font-size(43px);
     line-height: 1.16;
   }
+
+  @media (min-width: 1150px) {
+    .set-font-size(53px);
+    line-height: 1.08;
+  }
 }
+
 .form-page__block {
   display: flex;
   flex-direction: column;
@@ -74,7 +97,14 @@
     padding: 0 52px;
     padding-right: 105px;
   }
+
+  @media (min-width: 1150px) {
+    width: 675px;
+    margin-top: 112px;
+    padding: 0;
+  }
 }
+
 .form-page__words {
   .set-font-size(13px);
   font-family: opensans;
@@ -85,10 +115,15 @@
   margin: 0;
   padding: 0;
   padding-top: 25px;
-  min-height: 85px;
+  min-height: 88px;
 
-    @media (min-width: 772px) {
-      .set-font-size(17px);
-      line-height: 1.76;
+  @media (min-width: 772px) {
+    .set-font-size(17px);
+    line-height: 1.76;
+  }
+
+  @media (min-width: 1150px) {
+    padding-top: 0;
+    min-height: 47px;
   }
 }
