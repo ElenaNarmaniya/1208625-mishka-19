@@ -1,6 +1,5 @@
-.catalog {
+/* Файл blocks/catalog.less */
 
-}
 .catalog__name {
   display: flex;
   flex-direction: column;
@@ -22,8 +21,16 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 52px;
-    margin-top: -44px;
+    margin-top: -70px;
     position: relative;
+    /*border: 1px solid green;/**/
+  }
+
+  @media (min-width: 1150px) {
+    width: 1150px;
+    min-height: 255px;
+    padding: 0 50px;
+    margin-top: -55px;
     /*border: 1px solid green;/**/
   }
 }
@@ -43,6 +50,12 @@
     left: 0;
     z-index: 21;
   }
+
+  @media (min-width: 1150px) {
+    width: 1150px;
+    height: 34px;
+    top: 222px;
+  }
 }
 
 .catalog__text {
@@ -57,5 +70,10 @@
   @media (min-width: 772px) {
   .set-font-size(43px);
   line-height: 1.16;
+  }
+
+  @media (min-width: 1150px) {
+  .set-font-size(53px);
+  line-height: 1.08;
   }
 }
