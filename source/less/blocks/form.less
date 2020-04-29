@@ -6,14 +6,14 @@
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 30px;
   box-sizing: border-box;
   /*border: 1px solid blue;/**/
 
   @media (min-width: 772px) {
-    min-width: 772px;
+    width: 772px;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -21,9 +21,6 @@
 
   @media (min-width: 1150px) {
     width: 1150px;
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
   }
 }
 
@@ -466,7 +463,7 @@ input[type="checkbox"]:checked + span::before {
   height: 39px;
   box-sizing: border-box;
 
-   @media (min-width: 772px) {
+  @media (min-width: 772px) {
     width: 54px;
     height: 52px;
   }
