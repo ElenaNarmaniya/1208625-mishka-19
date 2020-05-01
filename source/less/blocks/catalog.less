@@ -1,6 +1,6 @@
 /* Файл blocks/catalog.less */
 
-.catalog__name {
+.name__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -35,12 +35,17 @@
   }
 }
 
+.catalog__name{
+  background: #f1f1f1;
+  position: relative;
+}
+
 .catalog__name::after {
   @media (min-width: 772px) {
     content: "";
     margin: 0;
     padding: 0;
-    width: 772px;
+    width: 100%;
     height: 24px;
     box-sizing: inherit;
     background: url('../img/zigzag-fill-desktop-svg.svg') no-repeat top center;
@@ -52,7 +57,6 @@
   }
 
   @media (min-width: 1150px) {
-    width: 1150px;
     height: 34px;
     top: 222px;
   }

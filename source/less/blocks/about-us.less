@@ -33,28 +33,31 @@
   }
 }
 
-.about-us::before {
+.main-page__about-us {
+  position: relative;
+}
+
+.main-page__about-us::before {
 
   @media (min-width: 772px) {
     content: "";
     margin: 0;
     padding: 0;
-    min-width: 772px;
+    width: 100%; /*772px*/
     height: 15px;
     box-sizing: inherit;
     background: url('../img/zigzag-line-desktop-svg.svg') no-repeat top center;
     background-size: cover;
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     z-index: 21;
   }
 
   @media (min-width: 1150px) {
-    min-width: 1050px;
+    /*min-width: 1050px; /*1050px*/
     height: 23px;
-    margin-left: 50px;
-    background: url('../img/zigzag-line-desktop-svg.svg') no-repeat top center;
+    /*margin-left: 50px;*/
   }
 }
 

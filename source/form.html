@@ -67,9 +67,11 @@
     </header>
     <main class="form-page">
       <!-- Разметка для оглавления "Вязание на заказ" идентична каталогу -->
-      <div class="form-page__name">
-        <p class="form-page__text">Вязание на заказ</p>
-      </div>
+      <section class="form-page__name">
+        <div class="form-page__wrapper">
+          <p class="form-page__text">Вязание на заказ</p>
+        </div>
+      </section>
       <!-- Разметка для текста под заголовком -->
       <section class="form-page__block">
         <p class="form-page__words">
@@ -78,6 +80,7 @@
       </section>
       <!-- Большой блок формы-->
       <form action="https://echo.htmlacademy.ru" method="post" name="choice" class="form">
+        <div class="form__wrapper">
         <!-- радио-кнопок ТИП -->
         <div class="form__radio">
           <p class="form__radio-name">ТИП</p>
@@ -171,28 +174,31 @@
         <button type="submit" value="SEND AN ORDER" class="button form__button">
           ОТПРАВИТЬ ЗАКАЗ
         </button>
+      </div>
       </form>
     </main>
     <!-- Разметка для БЛОКА "Подвал" -->
     <footer class="footer">
-      <div class="footer__logo">
-        <a class="footer__logo-main" href="index.html" title="Переход на главную страницу">
-          <img src="img/logo-footer-svg.svg" alt="Логотип mishka" width="102" height="34">
-        </a>
-      </div>
-      <div class="footer__item">
-        <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social insta">Инстаграм
-        </a>
-        <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social facebook">Фейсбук
-        </a>
-        <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social twit">Твиттер
-        </a>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__bottom-text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
-          <img src="img/htmlacademy-svg.png" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
-        </a>
+      <div class="footer-wrapper">
+        <div class="footer__logo">
+          <a class="footer__logo-main" href="index.html" title="Переход на главную страницу">
+            <img src="img/logo-footer-svg.svg" alt="Логотип mishka" width="102" height="34">
+          </a>
+        </div>
+        <div class="footer__item">
+          <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social insta">Инстаграм
+          </a>
+          <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social facebook">Фейсбук
+          </a>
+          <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social twit">Твиттер
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
+            <img src="img/htmlacademy-svg.png" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
+          </a>
+        </div>
       </div>
     </footer>
   </body>

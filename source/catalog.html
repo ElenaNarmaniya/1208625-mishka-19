@@ -68,9 +68,11 @@
     <!-- Разметка для БЛОКА "Каталог товаров" -->
     <main class="catalog">
     <!-- Разметка для БЛОКА оглавления "Каталог товаров" идентична форме -->
-      <div class="catalog__name">
-        <p class="catalog__text">Каталог товаров</p>
-      </div>
+      <section class="catalog__name">
+        <div class="name__wrapper">
+          <p class="catalog__text">Каталог товаров</p>
+        </div>
+      </section>
       <!-- Разметка для БЛОКА каждого товара -->
       <ul class="catalog__list list">
         <li class="list__item">
@@ -161,24 +163,26 @@
     </main>
     <!-- Разметка для БЛОКА "Подвал" -->
     <footer class="footer">
-      <div class="footer__logo">
-        <a class="footer__logo-main" href="index.html" title="Переход на главную страницу">
-          <img src="img/logo-footer-svg.svg" alt="Логотип mishka" width="102" height="34">
-        </a>
-      </div>
-      <div class="footer__item">
-        <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social insta">Инстаграм
-        </a>
-        <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social facebook">Фейсбук
-        </a>
-        <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social twit">Твиттер
-        </a>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__bottom-text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
-          <img src="img/htmlacademy-svg.png" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
-        </a>
+      <div class="footer-wrapper">
+        <div class="footer__logo">
+          <a class="footer__logo-main" href="index.html" title="Переход на главную страницу">
+            <img src="img/logo-footer-svg.svg" alt="Логотип mishka" width="102" height="34">
+          </a>
+        </div>
+        <div class="footer__item">
+          <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social insta">Инстаграм
+          </a>
+          <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social facebook">Фейсбук
+          </a>
+          <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social twit">Твиттер
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
+            <img src="img/htmlacademy-svg.png" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
+          </a>
+        </div>
       </div>
     </footer>
     <!-- Форма при нажатии на "Заказать"-->
