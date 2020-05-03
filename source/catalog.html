@@ -189,14 +189,21 @@
     <section class="modal-form">
       <p class="modal-form__bold">ДОБАВИТЬ В КОРЗИНУ</p>
       <p class="modal-form__medium">Выберите размер:</p>
-      <ul class="modal-form__size">
-        <li class="modal-form__size-item"><button class="modal-form__size-button">S</button></li>
-        <li class="modal-form__size-item"><button class="modal-form__size-button">M</button></li>
-        <li class="modal-form__size-item"><button class="modal-form__size-button">L</button></li>
-      </ul>
-      <a href="javascript: void(0)" class="button modal-form__button">
-        ДОБАВИТЬ
-      </a>
+      <form action="https://echo.htmlacademy.ru" method="post" name="choice_size" class="form__size">
+        <div class="modal-form__size">
+          <label class="modal-form__size-item">
+            <input  type="radio" name="size" value="S" class="visually-hidden" checked>S
+          </label>
+          <label class="modal-form__size-item">
+            <input type="radio" name="size" value="M" class="visually-hidden">M
+          </label>
+          <label class="modal-form__size-item">
+            <input type="radio" name="size" value="L" class="visually-hidden">L
+          </label>
+        </div>
+        <button type="submit" value="add size" class="button modal-form__button">
+        ДОБАВИТЬ</button>
+      </form>
     </section>
   </body>
 </html>

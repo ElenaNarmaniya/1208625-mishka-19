@@ -14,8 +14,8 @@
   background-color: #f1f1f1;
   /*border: 1px solid blue; /*убрать после*/
 
-  @media (min-width: 772px) {
-    width: 772px;
+  @media (min-width: 768px) {
+    width: 768px;
     min-height: 226px;
     flex-direction: row;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@
 }
 
 .catalog__name::after {
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     content: "";
     margin: 0;
     padding: 0;
@@ -65,13 +65,13 @@
 .catalog__text {
   /*border: 1px solid blue; /*убрать после*/
   .set-font-size(27px);
-  font-family: opensansbold;
+  font-family: opensansbold, Georgia, sans-serif;
   line-height: 1.11;
   text-align: center;
   color: #000000;
   margin: auto;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
   .set-font-size(43px);
   line-height: 1.16;
   }

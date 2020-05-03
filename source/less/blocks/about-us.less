@@ -11,8 +11,8 @@
   margin: 0 auto;
   padding: 0 30px;
 
-  @media (min-width: 772px) {
-    min-width: 772px;
+  @media (min-width: 768px) {
+    min-width: 768px;
     min-height: 500px;
     display: flex;
     flex-direction: row;
@@ -39,12 +39,12 @@
 
 .main-page__about-us::before {
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     content: "";
     margin: 0;
     padding: 0;
-    width: 100%; /*772px*/
-    height: 15px;
+    width: 100%;
+    min-height: 15px;
     box-sizing: inherit;
     background: url('../img/zigzag-line-desktop-svg.svg') no-repeat top center;
     background-size: cover;
@@ -56,14 +56,14 @@
 
   @media (min-width: 1150px) {
     /*min-width: 1050px; /*1050px*/
-    height: 23px;
+    min-height: 23px;
     /*margin-left: 50px;*/
   }
 }
 
 .about-us__bold {
   .set-font-size(25px);
-  font-family: opensansbold;
+  font-family: opensansbold, Georgia, sans-serif;
   text-align: left;
   color: #000000;
   line-height: 1.2;
@@ -75,7 +75,7 @@
   box-sizing: border-box;
   position: relative;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     .set-font-size(43px);
     line-height: 1.16;
     min-width: 316px;
@@ -111,8 +111,8 @@
   width: 320px;
   box-sizing: border-box;
 
-  @media (min-width: 772px) {
-    width: 772px;
+  @media (min-width: 768px) {
+    width: 768px;
     min-height: 410px;
     flex-direction: row;
     align-items: center;
@@ -142,7 +142,7 @@
   margin-top: 30px;
   box-sizing: border-box;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     margin-top: 0;
     min-width: 295px;
   }
@@ -154,12 +154,12 @@
 
 .about-us__list-item {
   /*border: 1px solid blue; /**/
-  font-family: opensansbold;
+  font-family: opensansbold, Georgia, sans-serif;
   text-align: left;
   color: #000000;
   line-height: 1.18;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     .set-font-size(20px);
     line-height: 1.1;
   }
@@ -171,14 +171,14 @@
 
 .icon:nth-child(n+1):nth-child(-n+3) .about-us__list-item {
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     max-width: 235px;
   }
 }
 
 .icon:nth-child(1) .about-us__list-item {
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     width: 205px;
   }
 }
@@ -187,7 +187,7 @@
   background: url('../img/icon-1-svg.png') no-repeat top center;
   background-position: 0px 0px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     order: 1;
   }
 
@@ -200,7 +200,7 @@
   background: url('../img/icon-3-svg.png') no-repeat top center;
   background-position: 0px 0px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     order: 3;
   }
 
@@ -213,7 +213,7 @@
   background: url('../img/icon-5-svg.png') no-repeat top center;
   background-position: 0px 0px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     order: 5;
   }
 
@@ -226,7 +226,7 @@
   background: url('../img/icon-2-svg.png') no-repeat top center;
   background-position: 0px 0px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     order: 2;
   }
 
@@ -239,7 +239,7 @@
   background: url('../img/icon-4-svg.png') no-repeat top center;
   background-position: 0px 0px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     order: 4;
   }
 
@@ -252,7 +252,7 @@
   background: url('../img/icon-6-svg.png') no-repeat top center;
   background-position: 0px 0px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     order: 6;
   }
 
