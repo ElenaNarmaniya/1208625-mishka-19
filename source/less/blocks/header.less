@@ -4,11 +4,11 @@
   /*border: 1px solid green; /**/
   position: relative;
   z-index: 2;
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
 
-  @media (min-width: 772px) {
-    min-width: 772px;
+  @media (min-width: 768px) {
+    width: 768px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -29,7 +29,7 @@
   position: relative;
   z-index: 100;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     display: flex;
     text-decoration: none;
     padding: 0;
@@ -60,18 +60,53 @@
 
 .header__logo-main {
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     display: flex;
     /*border: 1px solid green;/**/
   }
 }
 
-.main-nav__burger {
+.main-nav__burger--opened {
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-nav__burger--opened::after {
+  content: url('../img/menu-close-svg.svg');
+  position: absolute;
+  left: 268px;
+  top: 30px;
+  z-index: 100;
+  text-align: center;
+  width: 21px;
+  height: 20px;
+  cursor: pointer;
+  box-sizing: inherit;
+}
+
+.main-nav__burger--closed {
   position: absolute;
   left: 269px;
   top: 28px;
+  z-index: 100;
+  cursor:pointer;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     display: none;
   }
+}
+
+.main-nav__burger--closed::after {
+  content: url('../img/menu-svg.svg');
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 100;
+  text-align: center;
+  width: 21px;
+  height: 20px;
+  cursor: pointer;
+  box-sizing: inherit;
 }

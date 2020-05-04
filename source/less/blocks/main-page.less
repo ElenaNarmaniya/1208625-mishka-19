@@ -1,20 +1,27 @@
 /* Файл blocks/main-page.less */
 
 .main-page__background {
+  background: #f9f9f9;
+  position: relative;
+}
+
+.background__wrapper {
   position: relative;
   z-index: 1;
-  /*top: -30px;*/
-  .zero;
+  display: flex;
   box-sizing: border-box;
-  min-width: 320px;
+  width: 320px;
   margin: 0 auto;
   margin-top: -30px;
+  /*border: 1px solid red; /**/
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
+    width: 768px;
     margin-top: -72px; /*подтяжка фона*/
   }
 
   @media (min-width: 1150px) {
+    width: 1150px;
     margin-top: -55px; /*подтяжка фона*/
   }
 }
@@ -25,7 +32,7 @@
   width: 575px;
   height: 373px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     width: 1150px;
     height: 746px;
   }
@@ -34,7 +41,7 @@
 .main-page__text {
   .zero;
   color: #010000;
-  font-family: opensansbold;
+  font-family: opensansbold, Georgia, sans-serif;
   .set-font-size(27px);
   line-height: 1.11;
   text-align: center;
@@ -43,14 +50,14 @@
   left: 20px;
   min-width: 244px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     color: #000000;
-    font-family: opensansbold;
+    font-family: opensansbold, Georgia, sans-serif;
     .set-font-size(43px);
     line-height: 1.16;
     position: absolute;
     top: 161px;
-    left: 139px;
+    left: 160px;
     min-width: 494px;
   }
 

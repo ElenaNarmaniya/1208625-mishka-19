@@ -6,7 +6,7 @@
 .site-block__list {
   position: relative;
   z-index: 2;
-  min-width: 320px;
+  width: 320px;
   min-height: 206px;
   margin: 0 auto;
   margin-top: -30px;
@@ -19,8 +19,8 @@
   list-style: none;
   box-sizing: border-box;
 
-  @media (min-width: 772px) {
-    min-width: 772px;
+  @media (min-width: 768px) {
+    width: 768px;
     min-height: 119px;
     margin: 0 auto;
     margin-top: -118px;
@@ -40,30 +40,30 @@
   }
 }
 
-.site-block__list::after {
+.site-block::after {
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     content: "";
     margin: 0;
     padding: 0;
-    width: 770px;
+    width: 100%;
     height: 24px;
     box-sizing: inherit;
     background: url('../img/zigzag-fill-desktop-svg.svg') no-repeat top center;
     background-size: cover;
     position: absolute;
-    top: 105px;
+    top: 100px;
     left: 0;
     z-index: 21;
   }
 
-  @media (min-width: 772px) {
-    width: 770px;
+  @media (min-width: 768px) {
+    /*width: 770px; /*770*/
     height: 24px;
   }
 
   @media (min-width: 1150px) {
-    width: 1150px;
+    /*width: 1150px; /*1150*/
     height: 34px;
   }
 }
@@ -76,6 +76,7 @@
 .site-block__list .site-block__item:nth-child(2) {
   background-color: #56c3b2;
 }
+
 .site-block__element {
   width: 320px;
   min-height: 103px;
@@ -84,19 +85,19 @@
   text-align: left;
   color: #ffffff;
   .set-font-size(19px);
-  font-family: opensansbold;
+  font-family: opensansbold, Georgia, sans-serif;
   line-height: 1.26;
   text-decoration: none;
   box-sizing: border-box;
 
-  @media (min-width: 772px) {
-    min-width: 334px;
+  @media (min-width: 768px) {
+    min-width: 332px;
     min-height: 119px;
     display: flex;
     padding-left: 36px;
     color: #ffffff;
     .set-font-size(20px);
-    font-family: opensansbold;
+    font-family: opensansbold, Georgia, sans-serif;
     line-height: 1.5;
   }
 
@@ -113,7 +114,7 @@
   padding-right: 109px;
   padding-top: 10px;
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     min-width: 111px;
     min-height: 50px;
   }

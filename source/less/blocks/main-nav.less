@@ -1,9 +1,8 @@
 /* Файл blocks/main-nav.less */
 
-.main-nav {
-  /*display: none; /**/
+.main-nav--no-js {
 
-  @media (min-width: 772px) {
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -17,7 +16,67 @@
 
   @media (min-width: 1150px) {
     order: 1;
-    min-width: 1150px;
+    width: 1150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(68, 68, 68, 0.2);
+    /*border: 1px solid red;/**/
+  }
+}
+
+.main-nav--opened {
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(68, 68, 68, 0.2);
+    /*border: 1px solid red;/**/
+  }
+
+  @media (min-width: 1150px) {
+    order: 1;
+    width: 1150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(68, 68, 68, 0.2);
+    /*border: 1px solid red;/**/
+  }
+}
+
+.main-nav--closed {
+
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(68, 68, 68, 0.2);
+    /*border: 1px solid red;/**/
+  }
+
+  @media (min-width: 1150px) {
+    order: 1;
+    width: 1150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

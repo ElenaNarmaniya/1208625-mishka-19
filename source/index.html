@@ -13,11 +13,10 @@
         <img src="img/mishka-logo-mobile-svg.svg" alt="Логотип mishka" width="86" height="35">
       </div>
       <!-- кнопка для иконки бургера в мобил. версии, hidden - для скрытия в других версиях -->
-      <a class="main-nav__burger" title="Открытие меню" href="javascript: void(0)">
-        <img src="img/menu-svg.svg" alt="Бургер" width="20" height="14">
+      <a class="main-nav__burger main-nav__burger--closed" title="Открытие меню" href="javascript: void(0)">
       </a>
       <!-- Разметка для БЛОКА навигации -->
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--no-js">
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
             <a href="catalog.html" title="Переход на страницу Каталог товаров" class="site-list__link">Каталог товаров</a>
@@ -64,13 +63,13 @@
     <main class="main-page">
       <!-- Разметка для заголовка и фонового изображения -->
       <section class="main-page__background">
-        <img src="img/hero-mobile.png" alt="Изображение - Мишки в домике" width="575" height="373" class="main-page__foto">
-        <!-- text - одинаковый здесь и на странице каталога в названии "Каталог товаров" на стр-це формы в названии"Вязание на заказ" -->
-        <p class="main-page__text">
+        <div class="background__wrapper">
+          <img src="img/hero-mobile.png" alt="Изображение - Мишки в домике" width="575" height="373" class="main-page__foto">
+          <p class="main-page__text">
           Милые штуки ручной<br> работы для дома
-        </p>
+          </p>
+        </div>
       </section>
-      <!-- Разметка для БЛОКА "Предметы интерьера, детские игрушки, block - для отображения в планш. и десктоп. версиях-->
       <section class="main-page__block site-block">
         <ul class="site-block__list">
           <li class="site-block__item">
@@ -115,28 +114,30 @@
         </a>
       </section>
       <!-- Разметка для БЛОКА "Коротко о нас:" -->
-      <section class="main-page__about-us about-us">
-        <p class="about-us__bold">Коротко о нас:</p>
-        <ul class="about-us__list">
-          <li class="icon-ecology icon">
-            <p class="about-us__list-item">Экологически чистые материалы</p>
-          </li>
-          <li class="icon-cost icon">
-            <p class="about-us__list-item">Скандинавский стиль по российской цене</p>
-          </li>
-          <li class="icon-like icon">
-            <p class="about-us__list-item">Увеличивает лайки на фотографиях</p>
-          </li>
-          <li class="icon-love icon">
-            <p class="about-us__list-item">Связано вручную с любовью и умилением</p>
-          </li>
-          <li class="icon-country icon">
-            <p class="about-us__list-item">Поддержка отечественного производителя</p>
-          </li>
-          <li class="icon-gift icon">
-            <p class="about-us__list-item">Поставляется в подарочной упаковке</p>
-          </li>
-        </ul>
+      <section class="main-page__about-us">
+        <div class="about-us">
+          <p class="about-us__bold">Коротко о нас:</p>
+          <ul class="about-us__list">
+            <li class="icon-ecology icon">
+              <p class="about-us__list-item">Экологически чистые материалы</p>
+            </li>
+            <li class="icon-cost icon">
+              <p class="about-us__list-item">Скандинавский стиль по российской цене</p>
+            </li>
+            <li class="icon-like icon">
+              <p class="about-us__list-item">Увеличивает лайки на фотографиях</p>
+            </li>
+            <li class="icon-love icon">
+              <p class="about-us__list-item">Связано вручную с любовью и умилением</p>
+            </li>
+            <li class="icon-country icon">
+              <p class="about-us__list-item">Поддержка отечественного производителя</p>
+            </li>
+            <li class="icon-gift icon">
+              <p class="about-us__list-item">Поставляется в подарочной упаковке</p>
+            </li>
+          </ul>
+        </div>
       </section>
       <!-- Разметка для БЛОКА "Отзывы" -->
       <section class="main-page__reviews reviews">
@@ -159,7 +160,8 @@
         </a>
       </section>
       <!-- Разметка для БЛОКА "Контакты" -->
-      <section class="main-page__contacts contacts">
+      <section class="main-page__contacts">
+        <div class="contacts">
         <p class="contacts__write">Контакты</p>
         <div class="contacts__data">
           <div class="rows__column"></div>
@@ -179,42 +181,54 @@
         <a href="javascript: void(0)" class="button contacts__button">
           НАПИШИТЕ НАМ
         </a>
+      </div>
       </section>
     </main>
     <!-- Разметка для БЛОКА "Подвал" -->
     <footer class="footer">
-      <div class="footer__logo">
-        <a class="footer__logo-main" href="index.html" title="Переход на главную страницу">
-          <img src="img/logo-footer-svg.svg" alt="Логотип mishka" width="102" height="34">
-        </a>
-      </div>
-      <div class="footer__item">
-        <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social insta">Инстаграм
-        </a>
-        <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social facebook">Фейсбук
-        </a>
-        <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social twit">Твиттер
-        </a>
-      </div>
-      <div class="footer__bottom">
-        <p class="footer__bottom-text">Разработано</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
-          <img src="img/htmlacademy-svg.png" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
-        </a>
+      <div class="footer-wrapper">
+        <div class="footer__logo">
+          <a class="footer__logo-main" href="index.html" title="Переход на главную страницу">
+            <img src="img/logo-footer-svg.svg" alt="Логотип mishka" width="102" height="34">
+          </a>
+        </div>
+        <div class="footer__item">
+          <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social insta">Инстаграм
+          </a>
+          <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social facebook">Фейсбук
+          </a>
+          <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social twit">Твиттер
+          </a>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">Разработано</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
+            <img src="img/htmlacademy-svg.png" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
+          </a>
+        </div>
       </div>
     </footer>
     <!-- Форма при нажатии на "Заказать"-->
     <section class="modal-form">
       <p class="modal-form__bold">ДОБАВИТЬ В КОРЗИНУ</p>
       <p class="modal-form__medium">Выберите размер:</p>
-      <ul class="modal-form__size">
-        <li class="modal-form__size-item"><button class="modal-form__size-button">S</button></li>
-        <li class="modal-form__size-item"><button class="modal-form__size-button">M</button></li>
-        <li class="modal-form__size-item"><button class="modal-form__size-button">L</button></li>
-      </ul>
-      <a href="javascript: void(0)" class="button modal-form__button">
-        ДОБАВИТЬ
-      </a>
+      <form action="https://echo.htmlacademy.ru" method="post" name="choice_size" class="form__size">
+        <div class="modal-form__size">
+          <label class="modal-form__size-item">
+            <input  type="radio" name="size_S" value="S" class="visually-hidden" checked>S
+          </label>
+          <label class="modal-form__size-item">
+            <input type="radio" name="size_M" value="M" class="visually-hidden">M
+          </label>
+          <label class="modal-form__size-item">
+            <input type="radio" name="size_L" value="L" class="visually-hidden">L
+          </label>
+        </div>
+        <button type="submit" value="add size" class="button modal-form__button">
+        ДОБАВИТЬ</button>
+      </form>
     </section>
+    <script src="js/mobile-menu.js"></script>
+    <script src="js/modal-form.js"></script>
   </body>
 </html>
