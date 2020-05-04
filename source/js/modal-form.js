@@ -39,7 +39,7 @@
       localStorage.setItem("size_S", S.value);
       localStorage.setItem("size_M", M.value);
       localStorage.setItem("size_L", L.value);
-       }
+      }
     });
 
     window.addEventListener("keydown", function (evt) {
