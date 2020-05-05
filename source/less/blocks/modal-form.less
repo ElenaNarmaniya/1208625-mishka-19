@@ -153,23 +153,6 @@
   }
 }
 
-.radio:checked + .modal-form__span::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  text-align: center;
-  border: 2px solid rgba(68, 68, 68, 0.1);
-  min-width: 82px;
-  min-height: 52px;
-  box-sizing: border-box;
-
-  @media (min-width: 768px) {
-    min-width: 112px;
-  }
-}
-
 .radio:hover + .modal-form__span::before,
 .radio:focus + .modal-form__span::before {
   border: 2px solid rgba(68, 68, 68, 0.3);
@@ -177,6 +160,10 @@
 
 .radio:disabled + .modal-form__span::before {
   border: 2px solid rgba(68, 68, 68, 0.1);
+}
+
+.radio:checked + .modal-form__span::before {
+  border: 2px solid #63d1bb;
 }
 
 .modal-form__button {
