@@ -133,8 +133,8 @@
   overflow: hidden;
 }
 
-input[type="radio"]:checked + span,
-input[type="radio"]:not(:checked) + span {
+input[type="radio"]:checked + .form__span,
+input[type="radio"]:not(:checked) + .form__span {
   display: inline-block;
   position: relative;
   padding-left: 62px;
@@ -148,7 +148,7 @@ input[type="radio"]:not(:checked) + span {
   }
 }
 
-input[type="radio"] + span::before {
+input[type="radio"] + .form__span::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -167,7 +167,7 @@ input[type="radio"] + span::before {
   }
 }
 
-input[type="radio"]:checked + span::before {
+input[type="radio"]:checked + .form__span::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -186,7 +186,7 @@ input[type="radio"]:checked + span::before {
   }
 }
 
-input[type="radio"]:checked + span::after {
+input[type="radio"]:checked + .form__span::after {
   content: "";
   position: absolute;
   left: 12px;
@@ -586,7 +586,8 @@ input[type="text"] {
   letter-spacing: normal;
   text-align: left;
   color: rgba(68, 68, 68, 0.3);
-  box-shadow: inset 0px -2px 0 0 #000000;
+  border: none;
+  border-bottom: 2px solid black;
   box-sizing: border-box;
 
   @media (min-width: 768px) {
@@ -660,7 +661,7 @@ input[type="text"] {
 
   @media (min-width: 768px) {
     flex-direction: row;
-    min-height: 102px;
+    min-height: 114px;
     width: 768px;
     padding: 0 52px;
   }
@@ -728,7 +729,8 @@ input[type="tel"] {
   letter-spacing: normal;
   text-align: left;
   color: rgba(68, 68, 68, 0.3);
-  box-shadow: inset 0px -2px 0 0 #000000;
+  border: none;
+  border-bottom: 2px solid black;
   outline: none;
   box-sizing: border-box;
   position: relative;
@@ -800,9 +802,10 @@ input[type="tel"] {
 
   @media (min-width: 768px) {
     flex-direction: row;
-    min-height: 102px;
+    min-height: 114px;
     width: 768px;
     padding: 0 52px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: 1150px) {
@@ -826,7 +829,7 @@ input[type="tel"] {
 
   @media (min-width: 768px) {
     display: flex;
-    padding-top: 69px;
+    padding-top: 43px;
     padding-bottom: 18px;
   }
 
@@ -848,7 +851,7 @@ input[type="tel"] {
 
   @media (min-width: 768px) {
     min-width: 501px;
-    padding-top: 50px;
+    padding-top: 24px;
   }
 
   @media (min-width: 1150px) {
@@ -871,7 +874,8 @@ input[type="email"] {
   letter-spacing: normal;
   text-align: left;
   color: rgba(68, 68, 68, 0.3);
-  box-shadow: inset 0px -2px 0 0 #000000;
+  border: none;
+  border-bottom: 2px solid black;
   box-sizing: border-box;
   position: relative;
   z-index: 2;
@@ -897,12 +901,12 @@ input[type="email"] {
   z-index: 5;
 
   @media (min-width: 768px) {
-    top: 65px;
+    top: 35px;
     left: 450px;
   }
 
   @media (min-width: 1150px) {
-    top: 65px;
+    top: 35px;
     left: 640px;
   }
 }

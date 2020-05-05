@@ -16,11 +16,10 @@
         </a>
       </div>
       <!-- кнопка для иконки бургера в мобил. версии, hidden - для скрытия в других версиях -->
-      <a class="main-nav__burger" href="javascript: void(0)">
-        <img src="img/menu-svg.svg" alt="Бургер" width="20" height="14">
+      <a class="main-nav__burger main-nav__burger--closed" title="Открытие меню" href="javascript: void(0)">
       </a>
       <!-- Разметка для БЛОКА навигации -->
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--no-js">
         <!-- Разметка для БЛОКА разделов  -->
         <ul class="main-nav__site site-list">
           <li class="site-list__item">
@@ -87,11 +86,11 @@
             <div class="form__radio-button">
               <label>
                 <input class="visually-hidden" type="radio" name="type" value="interior accessory" checked>
-                <span>Аксессуар для интерьера</span>
+                <span class="form__span">Аксессуар для интерьера</span>
               </label>
               <label>
                 <input class="visually-hidden" type="radio" name="type" value="Children toy">
-                <span>Детская игрушка</span>
+                <span class="form__span">Детская игрушка</span>
               </label>
             </div>
           </div>
@@ -191,7 +190,7 @@
           <p class="form__field">*Поля обязательны для заполнения</p>
           <!-- блок кнопки отправить заказ-->
           <button type="submit" value="SEND AN ORDER" class="button form__button">
-          ОТПРАВИТЬ ЗАКАЗ</button>
+          Отправить заказ</button>
         </div>
       </form>
     </main>
@@ -219,5 +218,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/mobile-menu.js"></script>
   </body>
 </html>

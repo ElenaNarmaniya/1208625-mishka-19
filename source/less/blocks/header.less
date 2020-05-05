@@ -28,6 +28,7 @@
   .header-shadow;
   position: relative;
   z-index: 100;
+  background-color: #ffffff;
 
   @media (min-width: 768px) {
     display: flex;
@@ -84,6 +85,10 @@
   height: 20px;
   cursor: pointer;
   box-sizing: inherit;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .main-nav__burger--closed {
@@ -109,4 +114,8 @@
   height: 20px;
   cursor: pointer;
   box-sizing: inherit;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
