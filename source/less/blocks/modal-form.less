@@ -12,8 +12,8 @@
 }
 
 .modal-form {
-  border: 1px solid #c6c6c6;/**/
-  box-shadow: 0px 5px 10px 0 rgba(0, 1, 1, 0.25);
+  border: 1px solid #c6c6c6;/*red*/
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
   box-sizing: border-box;
   display: none;
   flex-direction: column;
@@ -43,7 +43,7 @@
 .modal-form__bold {
   box-sizing: border-box;
   .set-font-size(25px);
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   text-align: center;
   color: #000000;
   line-height: 1.2;
@@ -66,7 +66,7 @@
 .modal-form__medium {
   box-sizing: border-box;
   .set-font-size(15px);
-  font-family: opensans, Georgia, sans-serif;
+  font-family: "opensans", "Georgia", sans-serif;
   text-align: center;
   color: #444444;
   line-height: 2;
@@ -138,8 +138,8 @@
 .radio + .modal-form__span::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 1;
   text-align: center;
   border: 2px solid rgba(68, 68, 68, 0.1);
@@ -156,8 +156,8 @@
 .radio:checked + .modal-form__span::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 1;
   text-align: center;
   border: 2px solid rgba(68, 68, 68, 0.1);
@@ -170,7 +170,8 @@
   }
 }
 
-.radio:hover + .modal-form__span::before, .radio:focus + .modal-form__span::before {
+.radio:hover + .modal-form__span::before,
+.radio:focus + .modal-form__span::before {
   border: 2px solid rgba(68, 68, 68, 0.3);
 }
 
@@ -178,14 +179,10 @@
   border: 2px solid rgba(68, 68, 68, 0.1);
 }
 
-.radio:checked + .modal-form__span::before {
-  border: 2px solid #63d1bb;
-}
-
 .modal-form__button {
   background-color: #63d1bb;
   border: none;
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   text-align: center;
   color: #ffffff;
   line-height: 0.94;
