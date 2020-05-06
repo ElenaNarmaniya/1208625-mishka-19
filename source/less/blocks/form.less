@@ -35,10 +35,8 @@
 
 .form__radio-name {
   /*border: 1px solid green;/**/
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   line-height: 0.94;
-  text-align: left;
-  color: #63d1bb;
   min-width: 36px;
   text-align: left;
   .zero;
@@ -67,7 +65,7 @@
   margin: 0;
   padding: 0;
   color: #000000;
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
@@ -107,9 +105,6 @@
   }
 }
 
-.form__radio-button label:first-child {
-}
-
 .form__radio-button label:nth-child(2) {
   margin-top: 15px;
 
@@ -133,8 +128,8 @@
   overflow: hidden;
 }
 
-input[type="radio"]:checked + span,
-input[type="radio"]:not(:checked) + span {
+input[type="radio"]:checked + .form__span,
+input[type="radio"]:not(:checked) + .form__span {
   display: inline-block;
   position: relative;
   padding-left: 62px;
@@ -148,11 +143,11 @@ input[type="radio"]:not(:checked) + span {
   }
 }
 
-input[type="radio"] + span::before {
+input[type="radio"] + .form__span::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 1;
   text-align: center;
   border: 2px solid #444444;
@@ -167,11 +162,11 @@ input[type="radio"] + span::before {
   }
 }
 
-input[type="radio"]:checked + span::before {
+input[type="radio"]:checked + .form__span::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 1;
   text-align: center;
   border: 2px solid #444444;
@@ -186,7 +181,7 @@ input[type="radio"]:checked + span::before {
   }
 }
 
-input[type="radio"]:checked + span::after {
+input[type="radio"]:checked + .form__span::after {
   content: "";
   position: absolute;
   left: 12px;
@@ -211,7 +206,6 @@ input[type="radio"]:checked + span::after {
 /*чекбоксы*/
 
 .form__color {
-
   @media (min-width: 768px) {
     background-color: #f1f1f1;
   }
@@ -249,7 +243,7 @@ input[type="radio"]:checked + span::after {
 
 .form__color-name {
   /*border: 1px solid green;/*#ececec*/
-  font-family: opensansbold;
+  font-family: "opensansbold", "Georgia", sans-serif;
   line-height: 0.94;
   text-align: left;
   color: #63d1bb;
@@ -280,7 +274,7 @@ input[type="radio"]:checked + span::after {
   margin-top: -40px;
   margin-right: auto;
   color: #000000;
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
@@ -341,7 +335,6 @@ input[type="radio"]:checked + span::after {
 }
 
 .form__color-button label:nth-child(2) {
-
   @media (min-width: 768px) {
     margin-left: 117px; /*114*/
   }
@@ -352,18 +345,16 @@ input[type="radio"]:checked + span::after {
 }
 
 .form__color-button label:nth-child(4) {
-
   @media (min-width: 768px) {
     margin-left: 65px; /*68*/
   }
 
   @media (min-width: 1150px) {
-    margin-left: 0px;
+    margin-left: 0;
   }
 }
 
 .form__color-button label:nth-child(6) {
-
   @media (min-width: 768px) {
     margin-left: 92px; /*92*/
     margin-top: -85px; /*-85*/
@@ -376,19 +367,17 @@ input[type="radio"]:checked + span::after {
 }
 
 .form__color-button label:nth-child(2n+3) {
-
   @media (min-width: 768px) {
     margin-top: 24px; /*-60*/
   }
 
   @media (min-width: 1150px) {
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 119px; /*119*/
   }
 }
 
 .form__color-button label:nth-child(5) {
-
   @media (min-width: 768px) {
     margin-top: 24px; /*-85*/
   }
@@ -400,7 +389,6 @@ input[type="radio"]:checked + span::after {
 }
 
 .form__color-button label:nth-child(2n+4) {
-
   @media (min-width: 768px) {
     margin-top: 24px; /*-60*/
   }
@@ -428,8 +416,8 @@ input[type="checkbox"]:not(:checked) + span {
 input[type="checkbox"] + span::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 1;
   text-align: center;
   border: 2px solid #444444;
@@ -446,8 +434,8 @@ input[type="checkbox"] + span::before {
 input[type="checkbox"]:checked + span::before {
   content: "";
   position: absolute;
-  left: 0px;
-  top: 0px;
+  left: 0;
+  top: 0;
   z-index: 1;
   text-align: center;
   border: 2px solid #444444;
@@ -462,7 +450,7 @@ input[type="checkbox"]:checked + span::before {
 }
 
 input[type="checkbox"]:checked + span::after {
-  content: url('../img/tick-mobile-svg.svg');
+  content: url("../img/tick-mobile-svg.svg");
   position: absolute;
   left: 10px;
   top: 10px;
@@ -513,7 +501,7 @@ input[type="checkbox"]:checked + span::after {
 
 .form__full-name {
   /*border: 1px solid green;/**/
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   font-size: 17px;
   line-height: 0.94;
   text-align: left;
@@ -546,7 +534,7 @@ input[type="checkbox"]:checked + span::after {
   margin: 0;
   padding: 0;
   color: #000000;
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
@@ -577,7 +565,7 @@ input[type="text"] {
   min-height: 52px;
   outline: none;
   border: none;
-  font-family: opensans, Georgia, sans-serif;
+  font-family: "opensans", "Georgia", sans-serif;
   font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
@@ -586,7 +574,7 @@ input[type="text"] {
   letter-spacing: normal;
   text-align: left;
   color: rgba(68, 68, 68, 0.3);
-  box-shadow: inset 0px -2px 0 0 #000000;
+  border-bottom: 2px solid black;
   box-sizing: border-box;
 
   @media (min-width: 768px) {
@@ -603,7 +591,6 @@ input[type="text"] {
 }
 
 .form__full_width input[type="text"] {
-
   @media (min-width: 768px) {
     min-width: 428px;
   }
@@ -635,8 +622,8 @@ input[type="text"] {
 
 /*телефон*/
 
-.form__phone, .form__email {
-
+.form__phone,
+.form__email {
   @media (min-width: 768px) {
     background-color: #f1f1f1;
   }
@@ -660,7 +647,7 @@ input[type="text"] {
 
   @media (min-width: 768px) {
     flex-direction: row;
-    min-height: 102px;
+    min-height: 114px;
     width: 768px;
     padding: 0 52px;
   }
@@ -672,7 +659,7 @@ input[type="text"] {
 
 .form__phone-number {
   /*border: 1px solid red;/*#ececec*/
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   line-height: 0.94;
   text-align: left;
   color: #63d1bb;
@@ -719,7 +706,7 @@ input[type="tel"] {
   min-height: 52px;
   outline: none;
   border: none;
-  font-family: opensans;
+  font-family: "opensans", "Georgia", sans-serif;
   font-size: 19px;
   font-weight: normal;
   font-stretch: normal;
@@ -728,8 +715,7 @@ input[type="tel"] {
   letter-spacing: normal;
   text-align: left;
   color: rgba(68, 68, 68, 0.3);
-  box-shadow: inset 0px -2px 0 0 #000000;
-  outline: none;
+  border-bottom: 2px solid black;
   box-sizing: border-box;
   position: relative;
   z-index: 2;
@@ -800,9 +786,10 @@ input[type="tel"] {
 
   @media (min-width: 768px) {
     flex-direction: row;
-    min-height: 102px;
+    min-height: 114px;
     width: 768px;
     padding: 0 52px;
+    padding-bottom: 50px;
   }
 
   @media (min-width: 1150px) {
@@ -812,7 +799,7 @@ input[type="tel"] {
 
 .form__email-name {
   /*border: 1px solid red;/*#ececec*/
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   line-height: 0.94;
   text-align: left;
   color: #63d1bb;
@@ -826,7 +813,7 @@ input[type="tel"] {
 
   @media (min-width: 768px) {
     display: flex;
-    padding-top: 69px;
+    padding-top: 43px;
     padding-bottom: 18px;
   }
 
@@ -848,7 +835,7 @@ input[type="tel"] {
 
   @media (min-width: 768px) {
     min-width: 501px;
-    padding-top: 50px;
+    padding-top: 24px;
   }
 
   @media (min-width: 1150px) {
@@ -862,7 +849,7 @@ input[type="email"] {
   min-height: 52px;
   outline: none;
   border: none;
-  font-family: opensans;
+  font-family: "opensans", "Georgia", sans-serif;
   font-size: 19px;
   font-weight: normal;
   font-stretch: normal;
@@ -871,7 +858,7 @@ input[type="email"] {
   letter-spacing: normal;
   text-align: left;
   color: rgba(68, 68, 68, 0.3);
-  box-shadow: inset 0px -2px 0 0 #000000;
+  border-bottom: 2px solid black;
   box-sizing: border-box;
   position: relative;
   z-index: 2;
@@ -897,12 +884,12 @@ input[type="email"] {
   z-index: 5;
 
   @media (min-width: 768px) {
-    top: 65px;
+    top: 35px;
     left: 450px;
   }
 
   @media (min-width: 1150px) {
-    top: 65px;
+    top: 35px;
     left: 640px;
   }
 }
@@ -954,7 +941,7 @@ input[type="email"] {
 
 .form__additional-info {
   /*border: 1px solid red;/*#ececec*/
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   line-height: 0.94;
   text-align: left;
   color: #63d1bb;
@@ -970,10 +957,6 @@ input[type="email"] {
     display: flex;
     padding-top: 69px;
     margin-bottom: auto;
-  }
-
-  @media (min-width: 1150px) {
-
   }
 }
 
@@ -1004,7 +987,7 @@ input[type="email"] {
   height: 142px;
   padding: 18px 17px;
   outline: none;
-  font-family: opensans, Georgia, sans-serif;
+  font-family: "opensans", "Georgia", sans-serif;
   font-size: 17px;
   font-weight: normal;
   font-stretch: normal;
@@ -1013,7 +996,7 @@ input[type="email"] {
   letter-spacing: normal;
   text-align: left;
   color: rgba(68, 68, 68, 0.3);
-  box-shadow: inset 0px -2px 0 0 #000000;
+  box-shadow: inset 0 -2px 0 0 #000000;
   border: 2px solid #444444;
   border-bottom: none;
   box-sizing: border-box;
@@ -1103,7 +1086,7 @@ input[type="email"] {
 .form__button {
   width: 260px;
   min-height: 52px;
-  font-family: opensansbold, Georgia, sans-serif;
+  font-family: "opensansbold", "Georgia", sans-serif;
   line-height: 0.94;
   text-align: left;
   color: #444444;

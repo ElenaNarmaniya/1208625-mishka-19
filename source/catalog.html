@@ -16,11 +16,10 @@
         </a>
       </div>
       <!-- кнопка для иконки бургера в мобил. версии, hidden - для скрытия в других версиях -->
-      <a class="main-nav__burger" href="javascript: void(0)">
-        <img src="img/menu-svg.svg" alt="Бургер" width="20" height="14">
+      <a class="main-nav__burger main-nav__burger--closed" title="Открытие меню" href="javascript: void(0)">
       </a>
       <!-- Разметка для БЛОКА навигации -->
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--closed main-nav--no-js">
         <!-- Разметка для БЛОКА разделов  -->
         <ul class="main-nav__site site-list">
           <li class="site-list__item">
@@ -157,7 +156,7 @@
             </svg>
           </div>
           <p class="video__words">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="video__button button">СДЕЛАТЬ ЗАКАЗ</button>
+          <button class="video__button button">Сделать заказ</button>
         </div>
       </div>
     </main>
@@ -191,20 +190,25 @@
       <p class="modal-form__medium">Выберите размер:</p>
       <form action="https://echo.htmlacademy.ru" method="post" name="choice_size" class="form__size">
         <div class="modal-form__size">
-          <label class="modal-form__size-item">
-            <input  type="radio" name="size" value="S" class="visually-hidden" checked>S
+          <label>
+            <input class="radio visually-hidden" type="radio" name="size" value="size-S" checked>
+            <span class="modal-form__span">S</span>
           </label>
-          <label class="modal-form__size-item">
-            <input type="radio" name="size" value="M" class="visually-hidden">M
+          <label>
+            <input class="radio visually-hidden" type="radio" name="size" value="size-M">
+            <span class="modal-form__span">M</span>
           </label>
-          <label class="modal-form__size-item">
-            <input type="radio" name="size" value="L" class="visually-hidden">L
+          <label>
+            <input class="radio visually-hidden" type="radio" name="size" value="size-L">
+            <span class="modal-form__span">L</span>
           </label>
         </div>
         <button type="submit" value="add size" class="button modal-form__button">
         ДОБАВИТЬ</button>
       </form>
     </section>
+    <div class="modal-form__back"></div>
+    <script src="js/mobile-menu.js"></script>
     <script src="js/modal-form-catalog.js"></script>
   </body>
 </html>
