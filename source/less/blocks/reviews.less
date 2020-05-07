@@ -26,7 +26,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 52px;
-    background: #ffffff url("../img/review.png") no-repeat top left;
+    background: #ffffff url("../img/review@1x.jpg") no-repeat top left;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background: #ffffff url("../img/review@2x.jpg") no-repeat top left;
+      background-size: 350px auto;
+    }
   }
 
   @media (min-width: 1150px) {
@@ -36,7 +41,6 @@
     margin: 0 auto;
     margin-top: 40px;
     padding: 0 50px;
-    background: #ffffff url("../img/review.png") no-repeat top left;
     background-position: 50px 0;
   }
 }
