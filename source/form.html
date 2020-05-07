@@ -17,7 +17,11 @@
       <!-- header__logo задаст внешние отступы логотипу в мобил. и десктоп. версиях, header__logo_table задаст их в планшетной-->
       <div class="header__logo">
         <a class="header__logo-main" href="index.html" title="Переход на главную страницу">
-          <img src="img/mishka-logo-mobile-svg.svg" alt="Логотип mishka" width="86" height="35">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип mishka" width="86" height="35" class="header__logo-img">
+          </picture>
         </a>
       </div>
       <!-- кнопка для иконки бургера в мобил. версии, hidden - для скрытия в других версиях -->
@@ -218,7 +222,7 @@
         <div class="footer__bottom">
           <p class="footer__bottom-text">Разработано</p>
           <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
-            <img src="img/htmlacademy-svg.png" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
+              <img src="img/htmlacademy-svg.svg" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
           </a>
         </div>
       </div>
