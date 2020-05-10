@@ -746,6 +746,7 @@ input[type="tel"] {
 }
 
 .phone-svg {
+  fill: rgba(0, 0, 0, 0.2);
   width: 25px;
   height: 24px;
   box-sizing: inherit;
@@ -888,12 +889,8 @@ input[type="email"] {
   }
 }
 
-.form__email-label:hover input[type="email"],
-.form__tel-label:hover input[type="tel"] {
-  border-bottom: 2px solid #62d1ba;
-}
-
 .email-svg {
+  fill: rgba(0, 0, 0, 0.2);
   width: 32px;
   height: 32px;
   box-sizing: inherit;
@@ -927,6 +924,20 @@ input[type="email"] {
   @media (min-width: 768px) {
     width: 0;
   }
+}
+
+.form__email-label:hover input[type="email"],
+.form__tel-label:hover input[type="tel"],
+.form__email-label:focus input[type="email"],
+.form__tel-label:focus input[type="tel"] {
+  border-bottom: 2px solid #62d1ba;
+}
+
+.form__email-label:hover svg,
+.form__tel-label:hover svg,
+.form__email-label:focus svg,
+.form__tel-label:focus svg {
+  fill: #62d1ba;
 }
 
 /*доп. информация*/

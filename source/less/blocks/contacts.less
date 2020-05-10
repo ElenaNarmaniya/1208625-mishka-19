@@ -152,6 +152,7 @@
     display: flex;
     min-width: 668px;
     min-height: 77px;
+    margin-top: 0;
     padding: 0;
     /*border: 1px solid red;/**/
   }
@@ -225,12 +226,41 @@
 .contacts__first_name {
   padding-top: 35px;
   vertical-align: top;
+
+  @media (min-width: 768px) {
+    padding-left: 55px;
+    padding-top: 0;
+  }
+
+  @media (min-width: 1150px) {
+    padding-left: 55px;
+    padding-top: 35px;
+    padding-left: 0;
+  }
 }
 
 .contacts__first_addres {
   width: 160px;
   padding-top: 35px;
   vertical-align: top;
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+    padding-left: 26px;
+    width: 270px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-left: 55px;
+    padding-top: 35px;
+    padding-left: 0;
+  }
+}
+
+.contacts__first_addres br:nth-of-type(2) {
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .contacts__iframe {
