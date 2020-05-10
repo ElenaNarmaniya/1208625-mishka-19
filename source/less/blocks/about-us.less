@@ -38,19 +38,23 @@
 }
 
 .main-page__about-us::before {
+  content: "";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 10px;
+  box-sizing: inherit;
+  background: url("../img/zigzag-line-desktop-svg.svg") no-repeat top center;
+  background-size: cover;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  z-index: 21;
+
   @media (min-width: 768px) {
-    content: "";
-    margin: 0;
-    padding: 0;
-    width: 100%;
     min-height: 18px;
-    box-sizing: inherit;
-    background: url("../img/zigzag-line-desktop-svg.svg") no-repeat top center;
-    background-size: cover;
-    position: absolute;
     top: 0;
     left: 0;
-    z-index: 21;
   }
 
   @media (min-width: 1150px) {
