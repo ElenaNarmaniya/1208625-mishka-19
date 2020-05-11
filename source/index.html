@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    document.createElement( "picture" );
-    </script>
     <script src="js/picturefill.js" async></script>
+    <script>document.createElement("picture");</script>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
   </head>
   <body>
     <header class="header">
@@ -36,8 +36,8 @@
         <!-- Разметка для БЛОКА поиска -->
         <div class="main-nav__search search-block">
           <button type="button" class="search-block__button">
-            <svg xmlns="http://www.w3.org/2000/svg" width="17.6" height="17.6" viewBox="-0.8 -0.8 17.6 17.6" class="search__svg">
-              <path fill="#231F20" d="M16.47 14.93l-3.415-3.415c.965-1.289 1.545-2.881 1.545-4.616C14.6 2.646 11.153-.8 6.9-.8S-.8 2.646-.8 6.899s3.446 7.7 7.699 7.7c1.734 0 3.326-.58 4.613-1.546l3.417 3.416c.203.202.418.33.771.33.607 0 1.1-.492 1.1-1.1 0-.24-.061-.499-.33-.769zM1.399 6.899c0-3.038 2.462-5.5 5.5-5.5s5.5 2.462 5.5 5.5-2.462 5.5-5.5 5.5-5.5-2.461-5.5-5.5z"/>
+            <svg width="18" height="18" class="search__svg">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
             </svg>
             <p class="search-block__text">Поиск по сайту</p>
           </button>
@@ -48,8 +48,8 @@
         <!-- Разметка для БЛОКА корзины -->
         <div class="main-nav__basket basket-box">
           <a class="basket-box__basket" href="javascript: void(0)" title="Переход в корзину">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20.294" height="18.849" viewBox="264.205 370.961 20.294 18.849" class="basket__svg">
-              <path fill="#231F20" d="M283.75 378.19h-3.151l-3.407-6.814c-.185-.37-.634-.52-1.006-.335-.371.186-.521.636-.335 1.006l3.071 6.143h-9.138l3.072-6.143c.185-.371.035-.821-.335-1.006-.37-.185-.821-.035-1.006.335l-3.407 6.814h-3.151c-.414 0-.75.336-.75.75s.336.75.75.75h.157l.855 2.991c-.187.137-.316.347-.316.595 0 .396.309.71.697.739l1.656 5.795h12.697l1.656-5.795c.388-.028.698-.344.698-.739 0-.249-.129-.459-.316-.596l.854-2.991h.157c.414 0 .75-.336.75-.75s-.338-.749-.752-.749zm-4.181 10.121h-10.433l-1.224-4.284h12.881l-1.224 4.284zm1.653-5.785h-13.739l-.81-2.836h15.359l-.81 2.836z"/>
+            <svg width="20" height="19" class="basket__svg">
+              <use xlink:href="img/sprite.svg#basket-icon"></use>
             </svg>Корзина: пока пуста
           </a>
         </div>
@@ -73,6 +73,10 @@
       <section class="main-page__background">
         <div class="background__wrapper">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/hero-desktop@1x.webp, img/hero-desktop@2x.webp">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-tablet@1x.webp, img/hero-tablet@2x.webp">
+            <source type="image/webp" srcset="img/hero-mobile@1x.webp, img/hero-mobile@2x.webp">
+
             <source media="(min-width: 1150px)" srcset="img/hero-desktop@1x.jpg, img/hero-desktop@2x.jpg">
             <source media="(min-width: 768px)" srcset="img/hero-tablet@1x.jpg, img/hero-tablet@2x.jpg">
             <img src="img/hero-mobile@1x.jpg" srcset="img/hero-mobile@2x.jpg" alt="Изображение - Мишки в домике" width="575" height="373" class="main-page__foto">
@@ -86,14 +90,20 @@
         <ul class="site-block__list">
           <li class="site-block__item">
             <a href="javascript: void(0)" title="Переход на страницу Предметы интерьера" class="site-block__element">
-              <p class="site-block__text">Предметы интерьера</p>
-              <img src="img/interior-svg.png" alt="Иконка раздела - Предметы интерьера" width="40" height="62" class="site-block__image">
+              <p class="site-block__text">Предметы<br> интерьера</p>
+              <picture>
+                <source type="image/webp" srcset="img/interior-svg.webp, img/interior-svg@2x.webp">
+                <img src="img/interior-svg.png" srcset="img/interior-svg@2x.png" alt="Иконка раздела - Предметы интерьера" width="40" height="62" class="site-block__image">
+              </picture>
             </a>
           </li>
           <li class="site-block__item">
             <a href="javascript: void(0)" title="Переход на страницу Детские игрушки" class="site-block__element">
-              <p class="site-block__text">Детские игрушки</p>
-              <img src="img/toy-svg.png" alt="Иконка раздела - Детские игрушки" width="60" height="60" class="site-block__image">
+              <p class="site-block__text">Детские<br> игрушки</p>
+              <picture>
+                <source type="image/webp" srcset="img/toy-svg.webp, img/toy-svg@2x.webp">
+                <img src="img/toy-svg.png" srcset="img/toy-svg@2x.png" alt="Иконка раздела - Детские игрушки" width="60" height="60" class="site-block__image">
+            </picture>
             </a>
           </li>
         </ul>
@@ -103,7 +113,7 @@
         <!-- Разметка ТОВАР НЕДЕЛИ  ставим псевдоэлементом к заголовку -->
         <p class="brandweek__bold">Вязаные корзинки</p>
         <p class="brandweek__medium">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
-        <div class="brandweek__rows">
+        <div class="rows">
           <div class="rows__column"></div>
           <div class="rows__column"></div>
           <div class="rows__first">
@@ -120,6 +130,10 @@
           </div>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp, img/triple-set-desktop@2x.webp">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp, img/triple-set-tablet@2x.webp">
+          <source type="image/webp" srcset="img/triple-set-mobile@1x.webp, img/triple-set-mobile@2x.webp">
+
           <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg, img/triple-set-desktop@2x.jpg">
           <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg, img/triple-set-tablet@2x.jpg">
           <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg" alt="Вязаные корзинки" width="260" height="315" class="brandweek__image">
@@ -183,12 +197,12 @@
           <div class="rows__column"></div>
           <div class="rows__column"></div>
           <div class="rows__first">
-            <p class="rows__first_item">e-mail:</p>
-            <p class="rows__first_item rows__first_line">info@mimimishkashop.ru</p>
+            <p class="contacts-first-item rows__first_item">e-mail:</p>
+            <p class="contacts-first-item rows__first_item contacts__first_line"><a class="contacts__email" href="mailto: info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
           </div>
           <div class="rows__first">
-            <p class="rows__first_item rows__first_name">адрес:</p>
-            <p class="rows__first_item rows__first_addres">г. Санкт-Петербург,<br> ул. Большая<br> Конюшенная,<br> д. 19/8, офис 101</p>
+            <p class="contacts-first-item rows__first_item contacts__first_name">адрес:</p>
+            <p class="contacts-first-item rows__first_item contacts__first_addres">г. Санкт-Петербург,<br> ул. Большая<br> Конюшенная,<br> д. 19/8, офис 101</p>
           </div>
         </div>
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A116ee1e9c4e5fed8ddabddb279cfa304176cb1557b112b4a71785a8ce3a7b751&amp;source=constructor" width="320" height="457" class="contacts__iframe">
@@ -204,24 +218,38 @@
     <footer class="footer">
       <div class="footer-wrapper">
         <div class="footer__logo">
-          <a class="footer__logo-main" href="index.html" title="Переход на главную страницу">
-            <img src="img/logo-footer-svg.svg" alt="Логотип mishka" width="102" height="34">
+          <a class="footer__logo_main" href="index.html" title="Переход на главную страницу">
+            <svg class="footer__logo_icon" width="102px" height="34px">
+              <use xlink:href="img/sprite.svg#footer-icon"></use>
+            </svg>
           </a>
         </div>
         <div class="footer__item">
-          <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social insta">Инстаграм
+          <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social">
+            <svg class="footer__item-insta" width="22px" height="21px">
+              <use xlink:href="img/sprite.svg#insta-icon"></use>
+            </svg>
+            Инстаграм
           </a>
-          <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social facebook">Фейсбук
+          <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social">
+            <svg class="footer__item-facebook" width="15" height="28px">
+              <use xlink:href="img/sprite.svg#facebook-icon"></use>
+            </svg>
+            Фейсбук
           </a>
-          <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social twit">Твиттер
+          <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social">
+            <svg class="footer__item-twitter" width="23" height="20px">
+              <use xlink:href="img/sprite.svg#twitter-icon"></use>
+            </svg>
+            Твиттер
           </a>
         </div>
-        <div class="footer__bottom">
+        <a class="footer__bottom" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
           <p class="footer__bottom-text">Разработано</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
-            <img src="img/htmlacademy-svg.svg" alt="Логотип академии" width="27" height="34" class="footer__bottom-logomini">
-          </a>
-        </div>
+          <svg class="footer__bottom-logomini" width="27" height="34">
+            <use xlink:href="img/sprite.svg#mini-icon"></use>
+          </svg>
+        </a>
       </div>
     </footer>
     <!-- Форма при нажатии на "Заказать"-->

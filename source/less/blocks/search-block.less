@@ -41,8 +41,14 @@
   background-color: #ffffff;
   .header-shadow;
   border: none;
+  outline: none;
   cursor: pointer;
   box-sizing: border-box;
+
+  .search-block__button:active,
+  .search-block__button:focus {
+    outline: none;
+  }
 
   @media (min-width: 768px) {
     width: 82px;
@@ -62,12 +68,13 @@
 .search__svg {
   position: relative;
   left: -26px;
+  fill: rgba(68, 68, 68, 0.2);
 }
 
-.search__svg path {
-  fill: #231f20;
+.search-block__button:hover .search__svg {
+  fill: #63d1bb;
+}
 
-  @media (min-width: 768px) {
-    fill: rgba(68, 68, 68, 0.2);
-  }
+.search-block__button:active .search__svg {
+  fill: rgba(99, 209, 187, 0.3);
 }

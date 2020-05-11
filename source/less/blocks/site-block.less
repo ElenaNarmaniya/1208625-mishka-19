@@ -2,9 +2,11 @@
   position: relative;
   z-index: 20;
   background-color: #ffffff;
+  min-height: 124px;
 
   @media (min-width: 768px) {
     background-color: transparent;
+    min-height: 124px;
   }
 }
 
@@ -70,10 +72,28 @@
   margin: 0;
   padding: 0;
   background-color: #63d1bb;
+
+  &:hover,
+  &:active {
+    background-color: #59d5bc;
+    min-height: 108px;
+  }
+
+  @media (min-width: 768px) {
+    &:hover,
+    &:active {
+      min-height: 124px;
+    }
+  }
 }
 
 .site-block__list .site-block__item:nth-child(2) {
   background-color: #56c3b2;
+
+  &:hover,
+  &:active {
+    background-color: #46c1ae;
+  }
 }
 
 .site-block__element {
@@ -107,23 +127,47 @@
 }
 
 .site-block__text {
-  /*border: 1px solid red; /**/
+  /*border: 1px solid red; /*border*/
   width: 106px;
   min-height: 43px;
   padding-right: 109px;
   padding-top: 10px;
 
+  &:hover {
+    padding-top: 5px;
+  }
+
+  &:active {
+    opacity: 0.3;
+    padding-top: 5px;
+  }
+
   @media (min-width: 768px) {
-    min-width: 111px;
     min-height: 50px;
+  }
+
+  @media (min-width: 1150px) {
+    min-width: 284px;
   }
 }
 
 .site-block__image {
   display: flex;
   margin: auto 0;
+  margin-top: 22px;
+  margin-right: 27px;
 
-  @media (min-width: 1150px) {
-    margin-left: auto;
+  @media (min-width: 768px) {
+    margin-right: 34px;
   }
+}
+
+.site-block__element:hover img {
+  opacity: 0.7;
+  margin-top: 20px;
+}
+
+.site-block__element:active img {
+  opacity: 0.3;
+  margin-top: 20px;
 }

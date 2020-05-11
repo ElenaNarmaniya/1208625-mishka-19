@@ -50,6 +50,14 @@
   padding-bottom: 24px;
   box-sizing: border-box;
 
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
   @media (min-width: 768px) {
     text-align: right;
     box-shadow: none;
@@ -72,16 +80,18 @@
 .basket__svg {
   position: relative;
   left: -20px;
+  fill: rgba(68, 68, 68, 0.2);
 
   @media (min-width: 1150px) {
     left: -31px;
   }
 }
+/*<use xlink:href="#basket-icon"></use>*/
 
-.basket__svg path {
-  fill: #231f20;
+.basket-box__basket:hover .basket__svg {
+  fill: #63d1bb;
+}
 
-  @media (min-width: 768px) {
-    fill: rgba(68, 68, 68, 0.2);
-  }
+.basket-box__basket:active .basket__svg {
+  fill: rgba(99, 209, 187, 0.3);
 }

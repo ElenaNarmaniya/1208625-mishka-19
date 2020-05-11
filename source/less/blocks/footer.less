@@ -39,7 +39,19 @@
 
   @media (min-width: 768px) {
     display: flex;
-    /*border: 1px solid green;/**/
+    /*border: 1px solid green;/*del*/
+  }
+}
+
+.footer__logo_icon:hover {
+  @media (min-width: 768px) {
+    fill: #46c1ae;
+  }
+}
+
+.footer__logo_icon:active {
+  @media (min-width: 768px) {
+    fill: rgba(70, 193, 174, 0.3);
   }
 }
 
@@ -69,21 +81,21 @@
 .footer__item-social {
   text-align: left;
   box-sizing: border-box;
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active svg {
+    fill: rgba(70, 193, 174, 0.3);
+  }
 }
 
-.twit {
-  background: #f1f1f1 url("../img/twitter-svg.png") no-repeat;
-  background-position: 0 0;
-  width: 23px;
-  height: 20px;
+.footer__item-twitter {
   margin-left: 40px;
 }
 
-.insta {
-  background: #f1f1f1 url("../img/insta-svg.png") no-repeat;
-  background-position: 0 0;
-  width: 22px;
-  height: 21px;
+.footer__item-insta {
   margin-left: 52px;
 
   @media (min-width: 768px) {
@@ -91,17 +103,14 @@
   }
 }
 
-.facebook {
-  background: #f1f1f1 url("../img/fb-svg.png") no-repeat;
-  background-position: 0 0;
-  width: 15px;
-  height: 28px;
+.footer__item-facebook {
   margin-left: 40px;
 }
 
 .footer__bottom {
   display: flex;
   box-sizing: border-box;
+  text-decoration: none;
   .set-font-size(19px);
   font-family: "opensansbold", "Georgia", sans-serif;
   text-align: left;
@@ -137,4 +146,20 @@
   @media (min-width: 768px) {
     padding-left: 0;
   }
+}
+
+.footer__bottom:active p {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.footer__bottom svg {
+  fill: #63d1bb;
+}
+
+.footer__bottom:hover svg {
+  fill: #46c1ae;
+}
+
+.footer__bottom:active svg {
+  fill: rgba(70, 193, 174, 0.3);
 }

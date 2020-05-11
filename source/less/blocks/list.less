@@ -98,6 +98,14 @@
   padding-right: 28px;
   margin-top: -7px;
 
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
   @media (min-width: 768px) {
     width: 330px; /*335*/
     min-height: 334px;
@@ -118,6 +126,14 @@
   color: #000000;
   text-decoration: none;
   margin-top: 10px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 
   @media (min-width: 768px) {
     .set-font-size(20px);
@@ -193,4 +209,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.list__item-basket svg {
+  fill: rgba(68, 68, 68, 0.2);
+}
+
+.list__item-basket:hover svg {
+  fill: #63d1bb;
+}
+
+.list__item-basket:active svg {
+  fill: rgba(99, 209, 187, 0.3);
 }

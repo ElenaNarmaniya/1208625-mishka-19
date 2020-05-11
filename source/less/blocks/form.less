@@ -449,6 +449,16 @@ input[type="checkbox"]:checked + span::before {
   }
 }
 
+input[type="checkbox"]:hover + span::before,
+input[type="radio"]:hover + span::before {
+  border: 2px solid #62d1ba;
+}
+
+input[type="checkbox"]:disabled + span::before,
+input[type="radio"]:disabled + span::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
 input[type="checkbox"]:checked + span::after {
   content: url("../img/tick-mobile-svg.svg");
   position: absolute;
@@ -573,7 +583,7 @@ input[type="text"] {
   line-height: 1.06;
   letter-spacing: normal;
   text-align: left;
-  color: rgba(68, 68, 68, 0.3);
+  color: #444444;
   border-bottom: 2px solid black;
   box-sizing: border-box;
 
@@ -598,6 +608,10 @@ input[type="text"] {
   @media (min-width: 1150px) {
     width: 591px;
   }
+}
+
+.form__full_label:hover input[type="text"] {
+  border-bottom: 2px solid #62d1ba;
 }
 
 .form__full-nameform::before {
@@ -714,7 +728,7 @@ input[type="tel"] {
   line-height: 0.95;
   letter-spacing: normal;
   text-align: left;
-  color: rgba(68, 68, 68, 0.3);
+  color: #444444;
   border-bottom: 2px solid black;
   box-sizing: border-box;
   position: relative;
@@ -732,6 +746,7 @@ input[type="tel"] {
 }
 
 .phone-svg {
+  fill: rgba(0, 0, 0, 0.2);
   width: 25px;
   height: 24px;
   box-sizing: inherit;
@@ -857,7 +872,7 @@ input[type="email"] {
   line-height: 1.06;
   letter-spacing: normal;
   text-align: left;
-  color: rgba(68, 68, 68, 0.3);
+  color: #444444;
   border-bottom: 2px solid black;
   box-sizing: border-box;
   position: relative;
@@ -875,6 +890,7 @@ input[type="email"] {
 }
 
 .email-svg {
+  fill: rgba(0, 0, 0, 0.2);
   width: 32px;
   height: 32px;
   box-sizing: inherit;
@@ -908,6 +924,20 @@ input[type="email"] {
   @media (min-width: 768px) {
     width: 0;
   }
+}
+
+.form__email-label:hover input[type="email"],
+.form__tel-label:hover input[type="tel"],
+.form__email-label:focus input[type="email"],
+.form__tel-label:focus input[type="tel"] {
+  border-bottom: 2px solid #62d1ba;
+}
+
+.form__email-label:hover svg,
+.form__tel-label:hover svg,
+.form__email-label:focus svg,
+.form__tel-label:focus svg {
+  fill: #62d1ba;
 }
 
 /*доп. информация*/
@@ -995,7 +1025,7 @@ input[type="email"] {
   line-height: 1.06;
   letter-spacing: normal;
   text-align: left;
-  color: rgba(68, 68, 68, 0.3);
+  color: #444444;
   box-shadow: inset 0 -2px 0 0 #000000;
   border: 2px solid #444444;
   border-bottom: none;
@@ -1007,6 +1037,10 @@ input[type="email"] {
     font-size: 19px;
     line-height: 0.95;
   }
+}
+
+.form__additional-data:hover textarea {
+  border: 2px solid #62d1ba;
 }
 
 .form__additional-data::before {
