@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/picturefill.js" async></script>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="js/picturefill.js" async=""></script>
     <script>document.createElement("picture");</script>
     <script src="js/svg4everybody.js"></script>
     <script>svg4everybody();</script>
@@ -41,7 +41,7 @@
         <div class="main-nav__search search-block">
           <button type="button" class="search-block__button">
             <svg width="18" height="18" class="search__svg">
-              <use xlink:href="img/sprite.svg#search-icon"></use>
+              <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg>
             <p class="search-block__text">Поиск по сайту</p>
           </button>
@@ -53,7 +53,7 @@
         <div class="main-nav__basket basket-box">
           <a class="basket-box__basket" href="javascript: void(0)" title="Переход в корзину">
             <svg width="20" height="19" class="basket__svg">
-              <use xlink:href="img/sprite.svg#basket-icon"></use>
+              <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>Корзина: пока пуста
           </a>
         </div>
@@ -104,7 +104,7 @@
               <div class="list__item-basket">
                 <a class="list__item-boxbasket" href="javascript: void(0)" title="Переход в корзину">
                   <svg width="20" height="19">
-                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </a>
               </div>
@@ -133,7 +133,7 @@
               <div class="list__item-basket">
                 <a class="list__item-boxbasket" href="javascript: void(0)" title="Переход в корзину">
                   <svg width="20" height="19">
-                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </a>
               </div>
@@ -162,7 +162,7 @@
               <div class="list__item-basket">
                 <a class="list__item-boxbasket" href="javascript: void(0)" title="Переход в корзину">
                   <svg width="20" height="19">
-                    <use xlink:href="img/sprite.svg#basket-icon"></use>
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
                   </svg>
                 </a>
               </div>
@@ -182,10 +182,10 @@
 
               <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg">
               <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg">
-              <img  src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Видео производства" width="260" height="150" class="video__image_img">
+              <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg" alt="Видео производства" width="260" height="150" class="video__image_img">
             </picture>
             <svg class="video__image-svg" width="101" height="77">
-              <use xlink:href="img/sprite.svg#video-icon"></use>
+              <use xlink:href="img/sprite.svg#icon-play"></use>
             </svg>
           </div>
           <p class="video__words">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
@@ -199,26 +199,26 @@
         <div class="footer__logo">
           <a class="footer__logo_main" href="index.html" title="Переход на главную страницу">
             <svg class="footer__logo_icon" width="102px" height="34px">
-              <use xlink:href="img/sprite.svg#footer-icon"></use>
+              <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
             </svg>
           </a>
         </div>
         <div class="footer__item">
           <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social">
             <svg class="footer__item-insta" width="22px" height="21px">
-              <use xlink:href="img/sprite.svg#insta-icon"></use>
+              <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
             Инстаграм
           </a>
           <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social">
             <svg class="footer__item-facebook" width="15" height="28px">
-              <use xlink:href="img/sprite.svg#facebook-icon"></use>
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
             Фейсбук
           </a>
           <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social">
             <svg class="footer__item-twitter" width="23" height="20px">
-              <use xlink:href="img/sprite.svg#twitter-icon"></use>
+              <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
             Твиттер
           </a>
@@ -226,7 +226,7 @@
         <a class="footer__bottom" href="https://htmlacademy.ru/intensive/adaptive" title="Переход на страницу интенсива «Профессиональный HTML и CSS, уровень 2»">
           <p class="footer__bottom-text">Разработано</p>
           <svg class="footer__bottom-logomini" width="27" height="34">
-            <use xlink:href="img/sprite.svg#mini-icon"></use>
+            <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
@@ -238,7 +238,7 @@
       <form action="https://echo.htmlacademy.ru" method="post" name="choice_size" class="form__size">
         <div class="modal-form__size">
           <label>
-            <input class="radio visually-hidden" type="radio" name="size" value="size-S" checked>
+            <input class="radio visually-hidden" type="radio" name="size" value="size-S" checked="">
             <span class="modal-form__span">S</span>
           </label>
           <label>
