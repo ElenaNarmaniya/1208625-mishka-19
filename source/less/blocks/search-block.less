@@ -35,8 +35,8 @@
   min-height: 79px;
   margin: 0;
   padding: 0;
-  padding-top: 32px;
-  padding-left: 55px;
+  padding-top: 26px;
+  padding-left: 57px;
   padding-bottom: 30px;
   background-color: #ffffff;
   .header-shadow;
@@ -67,9 +67,19 @@
 
 .search__svg {
   position: relative;
-  left: -26px;
+  left: -25px;
+  top: 4px;
   fill: rgba(68, 68, 68, 0.2);
+
+  @media (min-width: 768px) {
+    left: -29px;
+  }
+
+  @media (min-width: 1150px) {
+    left: -26px;
+  }
 }
+
 
 .search-block__button:hover .search__svg {
   fill: #63d1bb;

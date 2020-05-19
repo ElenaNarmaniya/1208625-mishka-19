@@ -2,7 +2,7 @@
 
 /* радио-кнопок ТИП */
 
-.radio__wrapper {
+.form__radio-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,8 +27,9 @@
   }
 
   @media (min-width: 1150px) {
-    min-height: 239px;
+    min-height: 241px;
     width: 1050px;
+    margin-top: -5px;
     /*border: 1px solid green;/**/
   }
 }
@@ -42,19 +43,19 @@
   color: #63d1bb;
   .zero;
   margin-right: auto;
-  padding: 27px 0;
+  padding: 25px 0;
   position: relative;
 
   @media (min-width: 768px) {
     display: flex;
-    padding-top: 71px;
-    padding-left: 52px;
+    padding-top: 66px;
+    padding-left: 51px;
   }
 
   @media (min-width: 1150px) {
     display: flex;
     padding-top: 81px;
-    padding-left: 62px;
+    padding-left: 64px;
   }
 }
 
@@ -82,11 +83,12 @@
     min-height: 130px;
     font-size: 19px;
     line-height: 0.95;
-    margin-top: -65px;
+    margin-top: -59px;
   }
 
   @media (min-width: 1150px) {
-    margin-left: -340px;
+    margin-left: -367px;
+    margin-top: -56px;
   }
 }
 
@@ -134,13 +136,17 @@ input[type="radio"]:not(:checked) + .form__span {
   display: inline-block;
   position: relative;
   padding-left: 62px;
-  padding-top: 11px;
+  padding-top: 9px;
   cursor: pointer;
   vertical-align: middle;
 
   @media (min-width: 768px) {
     padding-left: 80px;
     padding-top: 18px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-top: 16px;
   }
 }
 
@@ -212,7 +218,7 @@ input[type="radio"]:checked + .form__span::after {
   }
 }
 
-.color__wrapper {
+.form__color-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,7 +257,7 @@ input[type="radio"]:checked + .form__span::after {
   min-width: 36px;
   .zero;
   margin-right: auto;
-  padding: 33px 0;
+  padding: 32px 0;
   position: relative;
 
   @media (min-width: 768px) {
@@ -272,7 +278,7 @@ input[type="radio"]:checked + .form__span::after {
   position: relative;
   margin: 0;
   padding: 0;
-  margin-top: -40px;
+  margin-top: -42px;
   margin-right: auto;
   color: #000000;
   font-family: "opensansbold", "Georgia", sans-serif;
@@ -297,13 +303,13 @@ input[type="radio"]:checked + .form__span::after {
     line-height: 0.95;
     padding-top: 5px;
     padding-left: 217px;
-    margin-top: -80px;
+    margin-top: -77px;
   }
 
   @media (min-width: 1150px) {
     min-height: 228px;
-    padding-left: 190px;
-    margin-top: -105px;
+    padding-left: 176px;
+    margin-top: -119px;
   }
 }
 
@@ -341,7 +347,7 @@ input[type="radio"]:checked + .form__span::after {
   }
 
   @media (min-width: 1150px) {
-    margin-left: 117px; /*117*/
+    margin-left: 113px; /*117*/
   }
 }
 
@@ -351,7 +357,7 @@ input[type="radio"]:checked + .form__span::after {
   }
 
   @media (min-width: 1150px) {
-    margin-left: 0;
+    margin-left: -3px;
   }
 }
 
@@ -362,7 +368,7 @@ input[type="radio"]:checked + .form__span::after {
   }
 
   @media (min-width: 1150px) {
-    margin-left: 97px; /*97*/
+    margin-left: 94px; /*97*/
     margin-top: -60px; /*-60*/
   }
 }
@@ -384,7 +390,7 @@ input[type="radio"]:checked + .form__span::after {
   }
 
   @media (min-width: 1150px) {
-    margin-top: -60px; /*-60*/
+    margin-top: -66px; /*-60*/
     margin-left: 102px; /*102*/
   }
 }
@@ -395,7 +401,7 @@ input[type="radio"]:checked + .form__span::after {
   }
 
   @media (min-width: 1150px) {
-    margin-top: -60px; /*-60*/
+    margin-top: -65px; /*-60*/
   }
 }
 
@@ -464,7 +470,7 @@ input[type="checkbox"]:checked + span::after {
   content: url("../img/tick-mobile-svg.svg");
   position: absolute;
   left: 10px;
-  top: 10px;
+  top: 13px;
   z-index: 1;
   text-align: center;
   width: 22px;
@@ -481,7 +487,7 @@ input[type="checkbox"]:checked + span::after {
 
 /*блок с ФИО*/
 
-.full__wrapper {
+.form__full-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -500,12 +506,14 @@ input[type="checkbox"]:checked + span::after {
     flex-direction: row;
     min-height: 304px;
     width: 768px;
-    padding: 0 52px;
+    padding: 0 50px;
     /*border: 1px solid green;/**/
   }
 
   @media (min-width: 1150px) {
     width: 1050px;
+    padding-left: 61px;
+    margin-top: -2px;
     /*border: 1px solid green;/**/
   }
 }
@@ -520,7 +528,7 @@ input[type="checkbox"]:checked + span::after {
   min-width: 36px;
   .zero;
   margin-right: auto;
-  padding: 34px 0;
+  padding: 24px 0;
   box-sizing: border-box;
   position: relative;
 
@@ -533,6 +541,7 @@ input[type="checkbox"]:checked + span::after {
   @media (min-width: 1150px) {
     min-width: 40px;
     display: flex;
+    margin-right: 72px;
   }
 }
 
@@ -543,6 +552,7 @@ input[type="checkbox"]:checked + span::after {
   flex-direction: column;
   position: relative;
   margin: 0;
+  margin-top: 3px;
   padding: 0;
   color: #000000;
   font-family: "opensansbold", "Georgia", sans-serif;
@@ -593,21 +603,21 @@ input[type="text"] {
     font-size: 19px;
     line-height: 0.95;
     padding-left: 17px;
-    margin-left: 27px;
+    margin-left: 20px;
   }
 
   @media (min-width: 1150px) {
-    min-width: 546px;
+    min-width: 575px;
   }
 }
 
 .form__full_width input[type="text"] {
   @media (min-width: 768px) {
-    min-width: 428px;
+    min-width: 426px;
   }
 
   @media (min-width: 1150px) {
-    width: 591px;
+    width: 626px;
   }
 }
 
@@ -622,7 +632,7 @@ input[type="text"] {
   position: absolute;
   width: 198px;
   height: 1px;
-  top: -42px;
+  top: -35px;
   left: 62px;
   z-index: 30;
 
@@ -644,7 +654,7 @@ input[type="text"] {
   }
 }
 
-.phone__wrapper {
+.form__phone-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -653,6 +663,7 @@ input[type="text"] {
   width: 320px;
   min-height: 73px;
   margin: 0 auto;
+  margin-top: -5px;
   padding: 0 30px;
   text-align: left;
   position: relative;
@@ -664,11 +675,13 @@ input[type="text"] {
     flex-direction: row;
     min-height: 114px;
     width: 768px;
-    padding: 0 52px;
+    padding: 0 50px;
+    margin-top: 1px;
   }
 
   @media (min-width: 1150px) {
     width: 1050px;
+    margin-top: 2px;
   }
 }
 
@@ -688,8 +701,14 @@ input[type="text"] {
 
   @media (min-width: 768px) {
     display: flex;
-    padding-top: 69px;
+    padding-top: 55px;
     padding-bottom: 18px;
+    padding-left: 1px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-left: 12px;
+    margin-right: 81px;
   }
 }
 
@@ -706,13 +725,13 @@ input[type="text"] {
 
   @media (min-width: 768px) {
     min-width: 501px;
-    padding-top: 50px;
+    padding-top: 40px;
   }
 
   @media (min-width: 1150px) {
     min-width: 700px;
     margin-right: auto;
-    padding-top: 50px;
+    padding-top: 41px;
   }
 }
 
@@ -734,6 +753,8 @@ input[type="tel"] {
   box-sizing: border-box;
   position: relative;
   z-index: 2;
+  margin-top: -2px;
+  margin-left: -1px;
 
   @media (min-width: 768px) {
     min-width: 501px;
@@ -742,11 +763,11 @@ input[type="tel"] {
   }
 
   @media (min-width: 1150px) {
-    width: 695px;
+    width: 700px;
   }
 }
 
-.phone-svg {
+.form__phone-svg {
   fill: rgba(0, 0, 0, 0.2);
   width: 25px;
   height: 24px;
@@ -757,13 +778,13 @@ input[type="tel"] {
   z-index: 5;
 
   @media (min-width: 768px) {
-    top: 65px;
+    top: 49px;
     left: 450px;
   }
 
   @media (min-width: 1150px) {
-    top: 63px;
-    left: 645px;
+    top: 49px;
+    left: 667px;
   }
 }
 
@@ -785,7 +806,7 @@ input[type="tel"] {
 
 /*почта*/
 
-.email__wrapper {
+.form__email-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -794,6 +815,7 @@ input[type="tel"] {
   width: 320px;
   min-height: 73px;
   margin: 0 auto;
+  margin-top: -3px;
   padding: 0 30px;
   text-align: left;
   position: relative;
@@ -804,8 +826,8 @@ input[type="tel"] {
     flex-direction: row;
     min-height: 114px;
     width: 768px;
-    padding: 0 52px;
-    padding-bottom: 50px;
+    padding: 0 50px;
+    padding-bottom: 41px;
   }
 
   @media (min-width: 1150px) {
@@ -829,12 +851,15 @@ input[type="tel"] {
 
   @media (min-width: 768px) {
     display: flex;
-    padding-top: 43px;
+    padding-top: 24px;
     padding-bottom: 18px;
+    padding-left: 1px;
   }
 
   @media (min-width: 1150px) {
-    margin-right: 82px;
+    margin-right: 57px;
+    padding-bottom: 15px;
+    padding-left: 11px;
   }
 }
 
@@ -851,7 +876,7 @@ input[type="tel"] {
 
   @media (min-width: 768px) {
     min-width: 501px;
-    padding-top: 24px;
+    padding-top: 10px;
   }
 
   @media (min-width: 1150px) {
@@ -878,6 +903,8 @@ input[type="email"] {
   box-sizing: border-box;
   position: relative;
   z-index: 2;
+  margin-top: -2px;
+  margin-left: -1px;
 
   @media (min-width: 768px) {
     min-width: 501px;
@@ -886,11 +913,11 @@ input[type="email"] {
   }
 
   @media (min-width: 1150px) {
-    width: 695px;
+    width: 700px;
   }
 }
 
-.email-svg {
+.form__email-svg {
   fill: rgba(0, 0, 0, 0.2);
   width: 32px;
   height: 32px;
@@ -901,13 +928,13 @@ input[type="email"] {
   z-index: 5;
 
   @media (min-width: 768px) {
-    top: 35px;
-    left: 450px;
+    top: 19px;
+    left: 447px;
   }
 
   @media (min-width: 1150px) {
-    top: 35px;
-    left: 640px;
+    top: 20px;
+    left: 663px;
   }
 }
 
@@ -943,7 +970,7 @@ input[type="email"] {
 
 /*доп. информация*/
 
-.additional__wrapper {
+.form__additional-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -952,6 +979,7 @@ input[type="email"] {
   width: 320px;
   min-height: 215px;
   margin: 0 auto;
+  margin-top: -1px;
   padding: 0 30px;
   text-align: left;
   position: relative;
@@ -962,7 +990,8 @@ input[type="email"] {
     flex-direction: row;
     min-height: 192px;
     width: 768px;
-    padding: 0 52px;
+    padding: 0 50px;
+    margin-top: 2px;
   }
 
   @media (min-width: 1150px) {
@@ -988,6 +1017,12 @@ input[type="email"] {
     display: flex;
     padding-top: 69px;
     margin-bottom: auto;
+    padding-left: 1px;
+  }
+
+  @media (min-width: 1150px) {
+    padding-left: 12px;
+    margin-right: 74px;
   }
 }
 
@@ -1004,7 +1039,7 @@ input[type="email"] {
 
   @media (min-width: 768px) {
     min-width: 501px;
-    padding-top: 50px;
+    padding-top: 51px;
   }
 
   @media (min-width: 1150px) {
@@ -1016,7 +1051,7 @@ input[type="email"] {
 .form__additional-data textarea {
   min-width: 260px;
   height: 142px;
-  padding: 18px 17px;
+  padding: 13px 15px;
   outline: none;
   font-family: "opensans", "Georgia", sans-serif;
   font-size: 17px;
@@ -1060,7 +1095,7 @@ input[type="email"] {
 
 /*текст со звездочкой и кнопка Отправить*/
 
-.field__wrapper {
+.form__field-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1069,6 +1104,8 @@ input[type="email"] {
   width: 320px;
   min-height: 170px;
   margin: 0 auto;
+  margin-top: -5px;
+  margin-bottom: 5px;
   padding: 0 30px;
   text-align: left;
   position: relative;
@@ -1084,7 +1121,7 @@ input[type="email"] {
 
   @media (min-width: 1150px) {
     width: 1050px;
-    min-height: 151px;
+    min-height: 157px;
   }
 }
 
@@ -1093,7 +1130,7 @@ input[type="email"] {
   margin: auto;
   margin-left: 0;
   .set-font-size(14px);
-  padding-top: 17px;
+  padding-top: 5px;
   padding-bottom: 16px;
   /*border: 1px solid green;/**/
 
@@ -1102,31 +1139,29 @@ input[type="email"] {
     .set-font-size(17px);
     line-height: 1.76;
     min-width: 300px;
-    padding-top: 12px;
+    padding-top: 14px;
     padding-bottom: 11px;
     margin-top: 53px;
-    margin-left: 102px;
+    margin-left: 136px;
   }
 
   @media (min-width: 1150px) {
     margin-top: 49px;
-    margin-left: 140px;
+    margin-left: 169px;
   }
 }
 
 /*кнопка-отправить заказ*/
 
 .form__button {
-  width: 260px;
+  min-width: 260px;
   min-height: 52px;
   font-family: "opensansbold", "Georgia", sans-serif;
   line-height: 0.94;
   text-align: left;
   color: #444444;
-  margin-bottom: 55px;
-  padding-left: 47px;
-  padding-top: 18px;
-  padding-bottom: 20px;
+  margin-bottom: 50px;
+  padding: 15px 46px 18px 44px;
   cursor: pointer;
   box-sizing: border-box;
   white-space: nowrap;
@@ -1135,13 +1170,14 @@ input[type="email"] {
     order: 1;
     display: flex;
     margin: 0;
-    margin-top: 7px;
+    margin-top: 12px;
     min-width: 230px;
     height: 52px;
+    padding: 16px 32px 18px 28px;
   }
 
   @media (min-width: 1150px) {
     margin-top: 7px;
-    margin-left: 145px;
+    margin-left: 126px;
   }
 }

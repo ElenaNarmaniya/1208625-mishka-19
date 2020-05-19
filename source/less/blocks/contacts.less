@@ -21,7 +21,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 52px;
+    padding: 0 50px;
     margin: 0 auto;
     margin-top: 45px;
     /*border: 1px solid green;/**/
@@ -40,34 +40,6 @@
   }
 }
 
-.main-page__contacts {
-  position: relative;
-}
-
-.main-page__contacts::after {
-  content: "";
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 10px;
-  box-sizing: inherit;
-  background: url("../img/zigzag-line-desktop-svg.svg") no-repeat top center;
-  background-size: cover;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  z-index: 21;
-
-  @media (min-width: 768px) {
-    min-height: 18px;
-    top: 20px;
-  }
-
-  @media (min-width: 1150px) {
-    min-height: 27px;
-  }
-}
-
 .contacts__write {
   font-size: 18px;
   font-family: "opensansbold", "Georgia", sans-serif;
@@ -77,7 +49,8 @@
   min-width: 260px;
   min-height: 14px;
   /*border: 1px solid red;/**/
-  margin-top: 95px;
+  margin-top: 85px;
+  margin-left: -5px;
   padding: 1px;
   box-sizing: border-box;
   position: relative;
@@ -85,6 +58,7 @@
 
 @media (min-width: 768px) {
   .contacts__write {
+    margin-top: 100px;
     font-size: 43px;
     line-height: 1.16;
     min-width: 668px;
@@ -101,7 +75,7 @@
     min-height: 39px;
     margin-right: auto;
     padding-left: 175px;
-    margin-top: 167px;
+    margin-top: 163px;
     order: 1;
     /*border: 1px solid red;/**/
   }
@@ -123,15 +97,15 @@
     background-size: cover;
     position: absolute;
     top: -15px;
-    left: 620px;
+    left: 623px;
     z-index: 21;
   }
 }
 
 @media (min-width: 1150px) {
   .contacts__write::after {
-    top: -15px;
-    left: 83px;
+    top: -7px;
+    left: 68px;
   }
 }
 
@@ -166,7 +140,7 @@
     padding: 0;
     padding-left: 175px;
     margin-right: auto;
-    margin-top: -80px;
+    margin-top: -49px;
     order: 2;
     /*border: 1px solid red;/**/
   }
@@ -174,6 +148,7 @@
 
 .contacts-first-item {
   border-bottom: none;
+  line-height: 2;
   /*border: 1px solid red;/**/
 }
 
@@ -187,9 +162,14 @@
   }
 }
 
+.contacts-first-item-email {
+  padding-top: 6px;
+}
+
 .contacts__email {
   text-decoration: none;
   color: #444444;
+  padding-top: 7px;
 
   &:hover {
     color: #46c1ae;
@@ -220,37 +200,43 @@
 
 .contacts__first_line {
   border-bottom: 1px solid #63d1bb;
+  padding-top: 7px;
+
+  @media (min-width: 768px) {
+    padding-top: 6px;
+    padding-left: 23px;
+  }
 }
 
 .contacts__first_name {
-  padding-top: 35px;
+  padding-top: 29px;
   vertical-align: top;
 
   @media (min-width: 768px) {
-    padding-left: 55px;
-    padding-top: 0;
+    padding-left: 51px;
+    padding-top: 5px;
   }
 
   @media (min-width: 1150px) {
-    padding-top: 35px;
+    padding-top: 31px;
     padding-left: 0;
   }
 }
 
 .contacts__first_addres {
   width: 160px;
-  padding-top: 35px;
+  padding-top: 29px;
   vertical-align: top;
 
   @media (min-width: 768px) {
-    padding-top: 0;
-    padding-left: 26px;
+    padding-top: 7px;
+    padding-left: 25px;
     width: 270px;
   }
 
   @media (min-width: 1150px) {
-    padding-top: 35px;
-    padding-left: 0;
+    padding-top: 31px;
+    padding-left: 26px;
   }
 }
 
@@ -265,7 +251,7 @@
   z-index: 10;
   padding: 0;
   margin: 0;
-  margin-top: 42px;
+  margin-top: 37px;
   border: none;
   background: #ffffff url("../img/map-mobile@1x.jpg") no-repeat top center;
 
@@ -279,6 +265,7 @@
   .contacts__iframe {
     /*border: 1px solid red;/**/
     margin-bottom: 61px;
+    margin-top: 58px;
     padding: 0;
     width: 768px;
     height: 457px;
@@ -295,7 +282,8 @@
 @media (min-width: 1150px) {
   .contacts__iframe {
     /*border: 1px solid red;/**/
-    margin-top: -607px;
+    margin-top: -552px;
+    margin-bottom: 105px;
     margin-left: auto;
     padding: 0;
     width: 525px;
@@ -344,7 +332,7 @@
   font-size: 18px;
   margin-top: 39px;
   margin-bottom: 39px;
-  padding: 20px 0;
+  padding: 14px 0;
 }
 
 @media (min-width: 768px) {
@@ -353,14 +341,14 @@
     line-height: 1.18;
     font-size: 17px;
     margin: -5px auto 57px auto;
-    padding: 20px 0;
+    padding: 14px 0;
   }
 }
 
 @media (min-width: 1150px) {
   .contacts__button {
     margin-left: 175px;
-    margin-top: -20px;
+    margin-top: 45px;
     order: 3;
   }
 }
