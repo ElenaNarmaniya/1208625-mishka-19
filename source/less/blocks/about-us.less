@@ -19,7 +19,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 52px;
+    padding: 0 50px;
     margin: 0 auto;
     /*border: 1px solid green;/**/
   }
@@ -33,35 +33,6 @@
   }
 }
 
-.main-page__about-us {
-  position: relative;
-}
-
-.main-page__about-us::before {
-  content: "";
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 10px;
-  box-sizing: inherit;
-  background: url("../img/zigzag-line-desktop-svg.svg") no-repeat top center;
-  background-size: cover;
-  position: absolute;
-  top: 38px;
-  left: 0;
-  z-index: 21;
-
-  @media (min-width: 768px) {
-    min-height: 18px;
-    top: 0;
-    left: 0;
-  }
-
-  @media (min-width: 1150px) {
-    min-height: 27px;
-  }
-}
-
 .about-us__bold {
   .set-font-size(25px);
   font-family: "opensansbold", "Georgia", sans-serif;
@@ -71,8 +42,8 @@
   min-width: 320px;
   min-height: 24px;
   /*border: 1px solid red;/**/
-  margin-top: 76px;
-  padding-left: 30px;
+  margin-top: 69px;
+  padding-left: 28px;
   box-sizing: border-box;
   position: relative;
 
@@ -82,7 +53,8 @@
     min-width: 316px;
     min-height: 42px;
     /*border: 1px solid red;/**/
-    margin-top: 60px;
+    margin-top: 67px;
+    margin-left: -5px;
     padding-left: 0;
   }
 
@@ -92,8 +64,8 @@
     min-width: 387px;
     min-height: 51px;
     /*border: 1px solid red;/**/
-    margin-top: 65px;
-    padding-left: 175px;
+    margin-top: 35px;
+    padding-left: 176px;
     /*border: 1px solid red;/**/
   }
 }
@@ -113,13 +85,13 @@
   box-sizing: border-box;
 
   @media (min-width: 768px) {
-    width: 768px;
+    width: 629px;
     min-height: 410px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 0;
-    margin: 0 auto;
+    margin: 0;
     /*border: 1px solid green;/**/
   }
 
@@ -128,7 +100,7 @@
     min-height: 410px;
     margin: 0 auto;
     margin-left: 175px;
-    margin-top: -88px;
+    margin-top: -60px;
     /*border: 1px solid green;/**/
   }
 }
@@ -140,16 +112,17 @@
   width: 290px;
   min-height: 98px;
   padding-top: 40px;
-  margin-top: 30px;
+  margin-top: 20px;
   box-sizing: border-box;
 
   @media (min-width: 768px) {
-    margin-top: 0;
+    margin-top: -8px;/*0*/
     min-width: 295px;
   }
 
   @media (min-width: 1150px) {
-    padding-top: 40px;
+    padding-top: 0;/*40*/
+    margin-top: 0;/*-8*/
   }
 }
 
@@ -184,78 +157,108 @@
 
 .about-us__icon-ecology {
   background: url("../img/icon-1-svg.svg") no-repeat top center;
-  background-position: 0 0;
+  background-position: 8px 2px;
+  width: 175px;
 
   @media (min-width: 768px) {
     order: 1;
+    background-position: 9px 5px;
+    margin-top: 0;
   }
 
   @media (min-width: 1150px) {
-    background-position: 0 44px;
+    background-position: 9px 16px;
+    margin-top: -104px;
   }
 }
 
 .about-us__icon-cost {
   background: url("../img/icon-3-svg.svg") no-repeat top center;
-  background-position: 0 0;
+  background-position: 0 3px;
+  margin-top: 9px;
+  width: 200px;
 
   @media (min-width: 768px) {
     order: 3;
+    margin-top: 31px;
+    background-position: 1px 7px;
   }
 
   @media (min-width: 1150px) {
-    background-position: 0 47px;
+    background-position: 1px 17px;
+    margin-top: -75px;
   }
 }
 
 .about-us__icon-like {
   background: url("../img/icon-5-svg.svg") no-repeat top center;
-  background-position: 0 0;
+  background-position: 7px 8px;
+  margin-top: 9px;
+  width: 185px;
 
   @media (min-width: 768px) {
     order: 5;
+    margin-top: 31px;
+    background-position: 9px 11px;
   }
 
   @media (min-width: 1150px) {
-    background-position: 0 52px;
+    background-position: 9px 22px;
+    margin-top: -103px;
+    position: relative;
+    top: 27px;
   }
 }
 
 .about-us__icon-love {
   background: url("../img/icon-2-svg.svg") no-repeat top center;
-  background-position: 0 0;
+  background-position: 3px 5px;
+  margin-top: 8px;
 
   @media (min-width: 768px) {
     order: 2;
+    margin-top: 0;
+    background-position: 3px 8px;
   }
 
   @media (min-width: 1150px) {
-    background-position: 0 44px;
+    background-position: 4px 19px;
+    margin-top: -106px;
   }
 }
 
 .about-us__icon-country {
   background: url("../img/icon-4-svg.svg") no-repeat top center;
-  background-position: 0 0;
+  background-position: -1px 6px;
+  margin-top: 10px;
 
   @media (min-width: 768px) {
     order: 4;
+    margin-top: 30px;
+    background-position: -1px 10px;
   }
 
   @media (min-width: 1150px) {
-    background-position: 0 44px;
+    background-position: -1px 21px;
+    margin-top: -74px;
   }
 }
 
 .about-us__icon-gift {
   background: url("../img/icon-6-svg.svg") no-repeat top center;
-  background-position: 0 0;
+  background-position: 3px 3px;
+  margin-top: 9px;
 
   @media (min-width: 768px) {
     order: 6;
+    margin-top: 30px;
+    background-position: 3px 8px;
   }
 
   @media (min-width: 1150px) {
-    background-position: 0 48px;
+    background-position: 3px 17px;
+    margin-top: -98px;
+    position: relative;
+    top: 24px;
   }
 }
