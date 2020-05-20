@@ -294,6 +294,7 @@ input[type="radio"]:checked + .form__span::after {
   /*border: 1px solid red;/**/
 
   @media (min-width: 768px) {
+    width: 100%;
     min-height: 204px;
     flex-wrap: wrap;
     flex-direction: row;
@@ -310,6 +311,14 @@ input[type="radio"]:checked + .form__span::after {
     min-height: 228px;
     padding-left: 176px;
     margin-top: -119px;
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .form__color-button {
+    @media (min-width: 768px) {
+      height: 228px;
+    }
   }
 }
 
@@ -621,7 +630,8 @@ input[type="text"] {
   }
 }
 
-.form__full_label:hover input[type="text"] {
+.form__full_label:hover input[type="text"],
+.form__full_label:focus input[type="text"] {
   border-bottom: 2px solid #62d1ba;
 }
 
@@ -1073,7 +1083,8 @@ input[type="email"] {
   }
 }
 
-.form__additional-data:hover textarea {
+.form__additional-data:hover textarea,
+.form__additional-data:focus textarea {
   border: 2px solid #62d1ba;
 }
 
