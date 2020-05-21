@@ -63,7 +63,7 @@
 
 .video__text {
   /*border: 1px solid green;/*#ececec*/
-  font-family: "opensansbold", "Georgia", sans-serif;
+  font-family: "opensansbold", "Arial", sans-serif;
   line-height: 1.41;
   text-align: left;
   color: #000000;
@@ -95,7 +95,7 @@
     width: 148px;
     min-height: 44px;
     .set-font-size(20px);
-    font-family: "opensansbold", "Georgia", sans-serif;
+    font-family: "opensansbold", "Arial", sans-serif;
     text-align: left;
     line-height: 1.2;
     margin-right: 0;
@@ -222,7 +222,7 @@
 
 .video__words {
   .set-font-size(13px);
-  font-family: "opensans", "Georgia", sans-serif;
+  font-family: "opensans", "Arial", sans-serif;
   line-height: 1.85;
   text-align: left;
   color: #444444;
@@ -261,33 +261,42 @@
   }
 }
 
-.video__button {
+.video__link {
   min-width: 192px;
   min-height: 52px;
-  font-family: "opensansbold", "Georgia", sans-serif;
+  font-family: "opensansbold", "Arial", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
   line-height: 0.94;
   text-align: center;
   color: #444444;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  padding-top: 17px;
   margin-top: 25px;
   margin-bottom: 33px;
+  border: 2px solid #444444;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: #444444;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 25, 0.3);
+  }
 
   @media (min-width: 768px) {
     min-width: 581px;
-    margin-left: 42px;
-    margin-right: 42px;
-    margin-top: 35px;
-    margin-bottom: 46px;
     order: 4;
+    margin: 35px 42px 46px;
   }
 
   @media (min-width: 1150px) {
     min-width: 230px;
-    margin-left: auto;
-    margin-right: 57px;
-    margin-top: 46px;
-    margin-bottom: 60px;
+    margin: 46px 56px 59px auto;
   }
 }

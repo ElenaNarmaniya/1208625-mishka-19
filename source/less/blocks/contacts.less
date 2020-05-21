@@ -42,7 +42,7 @@
 
 .contacts__write {
   font-size: 18px;
-  font-family: "opensansbold", "Georgia", sans-serif;
+  font-family: "opensansbold", "Arial", sans-serif;
   text-align: left;
   color: #000000;
   line-height: 1.67;
@@ -155,7 +155,7 @@
 @media (min-width: 768px) {
   .rows__first_item {
     font-size: 17px;
-    font-family: "opensans", "Georgia", sans-serif;
+    font-family: "opensans", "Arial", sans-serif;
     text-align: left;
     color: #444444;
     line-height: 1.76;
@@ -170,6 +170,10 @@
   text-decoration: none;
   color: #444444;
   padding-top: 7px;
+  background-image: linear-gradient(to bottom, rgba(99,209,187) 50%, transparent 50%);
+  background-position: 0px 26px;
+  background-repeat: repeat-x;
+  background-size: 1px 2px;
 
   &:hover {
     color: #46c1ae;
@@ -177,6 +181,10 @@
 
   &:active {
     color: rgba(70, 193, 174, 0.3);
+  }
+
+  @media (min-width: 768px) {
+    background-position: 0px 29px;
   }
 }
 
@@ -199,7 +207,6 @@
 }
 
 .contacts__first_line {
-  border-bottom: 1px solid #63d1bb;
   padding-top: 7px;
 
   @media (min-width: 768px) {
@@ -253,10 +260,10 @@
   margin: 0;
   margin-top: 37px;
   border: none;
-  background: #ffffff url("../img/map-mobile@1x.jpg") no-repeat top center;
+  background: #d9d2b2 url("../img/map-mobile@1x.jpg") no-repeat top center;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: #ffffff url("../img/map-mobile@2x.jpg") no-repeat top center;
+    background: #d9d2b2 url("../img/map-mobile@2x.jpg") no-repeat top center;
     background-size: 320px auto;
   }
 }
@@ -271,12 +278,12 @@
     padding: 0;
     width: 768px;
     height: 457px;
-    background: #ffffff url("../img/map-tablet@1x.jpg") no-repeat top center;
+    background: #d9d2b2 url("../img/map-tablet@1x.jpg") no-repeat top center;
     background-size: cover;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: #ffffff url("../img/map-tablet@2x.jpg") no-repeat top center;
+    background: #d9d2b2 url("../img/map-tablet@2x.jpg") no-repeat top center;
     background-size: 768px auto;
   }
 }
@@ -291,13 +298,13 @@
     padding: 0;
     width: 525px;
     height: 457px;
-    background: #ffffff url("../img/map-desktop@1x.jpg") no-repeat top center;
+    background: #d9d2b2 url("../img/map-desktop@1x.jpg") no-repeat top center;
     background-size: cover;
     order: 4;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    background: #ffffff url("../img/map-desktop@2x.jpg") no-repeat top center;
+    background: #d9d2b2 url("../img/map-desktop@2x.jpg") no-repeat top center;
     background-size: 525px auto;
   }
 }
@@ -330,7 +337,7 @@
 .contacts__button {
   text-align: center;
   color: #444444;
-  font-family: "opensansbold", "Georgia", sans-serif;
+  font-family: "opensansbold", "Arial", sans-serif;
   line-height: 1.11;
   font-size: 18px;
   margin-top: 39px;

@@ -1,51 +1,5 @@
 /* Файл blocks/main-nav.less */
 
-.main-nav__burger--opened::after {
-  content: url("../img/menu-close-svg.svg");
-  position: absolute;
-  left: 269px;
-  top: 29px;
-  z-index: 100;
-  text-align: center;
-  width: 21px;
-  height: 20px;
-  cursor: pointer;
-  box-sizing: inherit;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-.main-nav__burger--closed {
-  position: absolute;
-  left: 269px;
-  top: 28px;
-  z-index: 100;
-  cursor: pointer;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
-.main-nav__burger--closed::after {
-  content: url("../img/menu-svg.svg");
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 100;
-  text-align: center;
-  width: 21px;
-  height: 20px;
-  cursor: pointer;
-  box-sizing: inherit;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-}
-
 .main-nav--no-js {
   @media (min-width: 768px) {
     display: flex;

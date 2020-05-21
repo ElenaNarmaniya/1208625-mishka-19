@@ -26,7 +26,7 @@
         </a>
       </div>
       <!-- кнопка для иконки бургера в мобил. версии, hidden - для скрытия в других версиях -->
-      <a class="main-nav__burger main-nav__burger--closed" title="Открытие меню" href="javascript: void(0)">
+      <a class="burger burger__nav--closed" title="Открытие меню" href="javascript: void(0)">
       </a>
       <!-- Разметка для БЛОКА навигации -->
       <nav class="main-nav main-nav--closed main-nav--no-js">
@@ -44,8 +44,7 @@
           <button type="button" class="search-block__button">
             <svg width="18" height="18" class="search__svg">
               <use xlink:href="img/sprite.svg#icon-search"></use>
-            </svg>
-            <p class="search-block__text">Поиск по сайту</p>
+            </svg><span class="search-block__none">Поиск по сайту</span>
           </button>
           <form action="#" method="post" class="search-block__form">
             <input type="search" placeholder="Поле поиска" name="search" autocomplete="on">
@@ -70,7 +69,7 @@
         </ul>
         <!-- Разметка для БЛОКА доставки, название класса под вопросом, скрыли только в мобильной версии -->
         <div class="main-nav__send send">
-          <p cass="send__text">Бесплатная доставка по России</p>
+          <p class="send__text">Бесплатная доставка по России</p>
         </div>
       </nav>
     </header>
@@ -191,7 +190,7 @@
             </svg>
           </div>
           <p class="video__words">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-          <button class="video__button button">Сделать заказ</button>
+          <a class="video__link">Сделать заказ</a>
         </div>
       </div>
     </main>
@@ -200,26 +199,26 @@
       <div class="footer-wrapper">
         <div class="footer__logo">
           <a class="footer__logo_main" href="index.html" title="Переход на главную страницу">
-            <svg class="footer__logo_icon" width="102px" height="34px">
+            <svg class="footer__logo_icon" width="102" height="34">
               <use xlink:href="img/sprite.svg#icon-logo-footer"></use>
             </svg>
           </a>
         </div>
         <div class="footer__item">
           <a href="https://instagram.com" title="Переход на сайт instagram.com" class="footer__item-social">
-            <svg class="footer__item-insta" width="22px" height="21px">
+            <svg class="footer__item-insta" width="22" height="21">
               <use xlink:href="img/sprite.svg#icon-insta"></use>
             </svg>
             Инстаграм
           </a>
           <a href="https://facebook.com" title="Переход на сайт facebook.com" class="footer__item-social">
-            <svg class="footer__item-facebook" width="15" height="28px">
+            <svg class="footer__item-facebook" width="15" height="28">
               <use xlink:href="img/sprite.svg#icon-fb"></use>
             </svg>
             Фейсбук
           </a>
           <a href="https://twitter.com" title="Переход на сайт twitter.com" class="footer__item-social">
-            <svg class="footer__item-twitter" width="23" height="20px">
+            <svg class="footer__item-twitter" width="23" height="20">
               <use xlink:href="img/sprite.svg#icon-twitter"></use>
             </svg>
             Твиттер

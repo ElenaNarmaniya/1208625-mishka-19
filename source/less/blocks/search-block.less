@@ -29,7 +29,7 @@
 
 .search-block__button {
   display: flex;
-  font-family: "opensansbold", "Georgia", sans-serif;
+  font-family: "opensansbold", "Arial", sans-serif;
   .set-font-size(17px);
   line-height: 1.41;
   min-height: 79px;
@@ -87,4 +87,10 @@
 
 .search-block__button:active .search__svg {
   fill: rgba(99, 209, 187, 0.3);
+}
+
+.search-block__none {
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
