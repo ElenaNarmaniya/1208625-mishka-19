@@ -145,14 +145,23 @@
   }
 }
 
+.contacts__first {
+  display: table-row;
+}
+
 .contacts-first-item {
+  display: table-cell;
   border-bottom: none;
   line-height: 2;
-  /*border: 1px solid red;/**/
+  .set-font-size(15px);
+  /*width: 67px;*/
+  text-align: left;
+  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
-  .rows__first_item {
+  .contacts-first-item {
     font-size: 17px;
     font-family: "opensans", "Arial", sans-serif;
     text-align: left;
