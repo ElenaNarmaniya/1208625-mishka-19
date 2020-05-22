@@ -23,7 +23,7 @@
         </picture>
       </div>
       <!-- кнопка для иконки бургера в мобил. версии, hidden - для скрытия в других версиях -->
-      <a class="burger burger__nav--closed" title="Открытие меню" href="javascript: void(0)">
+      <a class="header__nav header__nav--closed" title="Открытие меню" href="javascript: void(0)">
       </a>
       <!-- Разметка для БЛОКА навигации -->
       <nav class="main-nav main-nav--closed main-nav--no-js">
@@ -37,7 +37,7 @@
         </ul>
         <!-- Разметка для БЛОКА поиска -->
         <div class="main-nav__search search-block">
-          <button type="button" class="search-block__button">
+          <button type="button" class="search-block__button search">
             <svg width="18" height="18" class="search__svg">
               <use xlink:href="img/sprite.svg#icon-search"></use>
             </svg><span class="search-block__none">Поиск по сайту</span>
@@ -48,7 +48,7 @@
         </div>
         <!-- Разметка для БЛОКА корзины -->
         <div class="main-nav__basket basket-box">
-          <a class="basket-box__basket" href="javascript: void(0)" title="Переход в корзину">
+          <a class="basket-box__basket basket" href="javascript: void(0)" title="Переход в корзину">
             <svg width="20" height="19" class="basket__svg">
               <use xlink:href="img/sprite.svg#icon-cart"></use>
             </svg>Корзина: пока пуста
@@ -192,7 +192,7 @@
       <section class="main-page__contacts">
         <div class="contacts">
         <p class="contacts__write">Контакты</p>
-        <div class="contacts__data">
+        <div class="contacts__data rows"> <!-- вставка rows-->
           <div class="rows__column"></div>
           <div class="rows__column"></div>
           <div class="rows__first">
@@ -204,7 +204,7 @@
             <p class="contacts-first-item rows__first_item contacts__first_addres">г. Санкт-Петербург, ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8,&nbsp;офис&nbsp;101</p>
           </div>
         </div>
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A116ee1e9c4e5fed8ddabddb279cfa304176cb1557b112b4a71785a8ce3a7b751&amp;source=constructor" width="320" height="457" class="contacts__iframe">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A116ee1e9c4e5fed8ddabddb279cfa304176cb1557b112b4a71785a8ce3a7b751&amp;source=constructor" class="contacts__iframe">
         </iframe>
         <div class="contacts__pin"></div>
         <a href="javascript: void(0)" class="button contacts__button">
@@ -255,7 +255,7 @@
     <section class="modal-form">
       <p class="modal-form__bold">ДОБАВИТЬ В КОРЗИНУ</p>
       <p class="modal-form__medium">Выберите размер:</p>
-      <form action="https://echo.htmlacademy.ru" method="post" name="choice_size" class="form__size">
+      <form action="https://echo.htmlacademy.ru" method="post" name="choice_size" class="modal-form__form">
         <div class="modal-form__size">
           <label>
             <input class="radio visually-hidden" type="radio" name="size" value="size-S" checked="">
@@ -274,7 +274,7 @@
         Добавить</button>
       </form>
     </section>
-    <div class="modal-form__back"></div>
+    <div class="overlay"></div>
     <script src="js/mobile-menu.js"></script>
     <script src="js/modal-form.js"></script>
   </body>

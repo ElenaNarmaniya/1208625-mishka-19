@@ -1,6 +1,6 @@
     var basket = document.querySelectorAll(".list__item-boxbasket");
     var popup = document.querySelector(".modal-form");
-    var backup = document.querySelector(".modal-form__back");
+    var backup = document.querySelector(".overlay");
     var form = popup.querySelector("form");
 
     for (var i=0; i <= basket.length -1; i++) {

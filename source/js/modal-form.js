@@ -1,6 +1,6 @@
     var link = document.querySelector(".brandweek__button");
     var popup = document.querySelector(".modal-form");
-    var backup = document.querySelector(".modal-form__back");
+    var backup = document.querySelector(".overlay");
     var form = popup.querySelector("form");
 
 
